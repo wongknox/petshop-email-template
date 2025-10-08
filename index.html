@@ -82,11 +82,21 @@
         .stack-column-center {
           display: block !important;
           width: 100% !important;
-          max-width: 100% !important;
+          max-width: 400px !important;
           direction: ltr !important;
         }
         .stack-column-center {
           text-align: center !important;
+        }
+        .center-on-mobile {
+          margin: 0 auto !important;
+        }
+        .product-image {
+          padding-left: 0 !important;
+        }
+        .product-description {
+          padding-top: 20px !important;
+          padding-bottom: 20px !important;
         }
       }
     </style>
@@ -126,7 +136,7 @@
           border="0"
           align="center"
           width="600"
-          style="margin: 0 auto"
+          style="margin: 0 auto; width: 600px"
           class="email-container"
         >
           <!-- Logo -->
@@ -139,6 +149,7 @@
                 alt="PetShop Logo"
                 border="0"
                 style="
+                  width: 200px;
                   height: auto;
                   font-family: sans-serif;
                   font-size: 15px;
@@ -148,7 +159,7 @@
               />
             </td>
           </tr>
-          <!-- Beginning of email content -->
+          <!-- Beginning of hero section -->
           <tr>
             <td style="background-color: #f5945c">
               <table
@@ -166,8 +177,8 @@
                       alt="Golden retriever with corgi"
                       width="600"
                       style="
-                        max-width: 100%;
-                        max-width: 100%;
+                        width: 100%;
+                        max-width: 600px;
                         height: auto;
                         display: block;
                       "
@@ -207,6 +218,7 @@
                     </div>
                   </td>
                 </tr>
+                <!-- Hero CTA -->
                 <tr>
                   <td style="padding: 0 20px 20px">
                     <table
@@ -254,6 +266,414 @@
               </table>
             </td>
           </tr>
+          <!-- End of hero section -->
+          <!-- Free shipping banner -->
+          <tr>
+            <td style="text-align: center; padding: 10px 0">
+              <a href="#">
+                <img
+                  src="assets/Free Shipping.png"
+                  alt="Free shipping banner"
+                  width="500"
+                  style="
+                    width: 100%;
+                    max-width: 500px;
+                    height: auto;
+                    display: block;
+                    margin: 0 auto;
+                  "
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- Paw-some deals section -->
+          <tr>
+            <td style="padding: 20px 0">
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="500"
+                align="center"
+                style="margin: 0 auto"
+              >
+                <tr>
+                  <td style="background-color: #f7f7f5">
+                    <table
+                      role="presentation"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      width="100%"
+                    >
+                      <!-- Paw-some deals header -->
+                      <tr>
+                        <td style="text-align: center; padding: 20px 0 40px">
+                          <h1
+                            style="
+                              color: #000000;
+                              margin: 0;
+                              font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                Verdana, Arial, sans-serif;
+                              font-size: 40px;
+                              line-height: 40px;
+                              font-weight: 700;
+                            "
+                          >
+                            PAW-SOME DEALS
+                          </h1>
+                        </td>
+                      </tr>
+                      <!-- Product 1 -->
+                      <tr>
+                        <td>
+                          <table
+                            role="presentation"
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            width="100%"
+                          >
+                            <tr>
+                              <!-- Product 1 image -->
+                              <td
+                                class="stack-column stack-column-center product-image"
+                                width="150"
+                                style="
+                                  width: 150px;
+                                  vertical-align: top;
+                                  padding-left: 30px;
+                                "
+                              >
+                                <img
+                                  src="assets/Fruitables_Skinny_Minis.png"
+                                  class="center-on-mobile"
+                                  alt="Fruitables skinny minis treats"
+                                  width="150"
+                                  style="
+                                    width: 100%;
+                                    max-width: 150px;
+                                    height: auto;
+                                    display: block;
+                                  "
+                                />
+                              </td>
+                              <!-- Product 1 description -->
+                              <td
+                                class="stack-column stack-column-center product-description"
+                                style="
+                                  padding: 0 20px 40px;
+                                  vertical-align: top;
+                                  text-align: center;
+                                "
+                              >
+                                <h3
+                                  style="
+                                    margin: 0 0 15px;
+                                    font-family: 'Nunito', Calibri,
+                                      'Trebuchet MS', Verdana, Arial, sans-serif;
+                                    font-size: 24px;
+                                    line-height: 32px;
+                                    font-weight: 700;
+                                    color: #000000;
+                                  "
+                                >
+                                  Fruitables Skinny Minis - Pumpkin & Mango
+                                  Flavor
+                                </h3>
+                                <p
+                                  style="
+                                    margin: 0 0 15px;
+                                    font-family: 'Nunito', Calibri,
+                                      'Trebuchet MS', Verdana, Arial, sans-serif;
+                                    font-size: 18px;
+                                    font-weight: 800;
+                                    color: #f60505;
+                                  "
+                                >
+                                  $9.99
+                                </p>
+                                <!-- Product 1 CTA -->
+                                <table
+                                  role="presentation"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  border="0"
+                                  class="center-on-mobile"
+                                >
+                                  <tr>
+                                    <td
+                                      class="button-td"
+                                      style="
+                                        border-radius: 10px;
+                                        background: #f5945c;
+                                      "
+                                    >
+                                      <a
+                                        href="#"
+                                        class="button-a"
+                                        style="
+                                          background: #f5945c;
+                                          border: 1px solid #f5945c;
+                                          font-family: 'Nunito', Calibri,
+                                            'Trebuchet MS', Verdana, Arial,
+                                            sans-serif;
+                                          font-size: 16px;
+                                          line-height: 16px;
+                                          font-weight: 700;
+                                          text-decoration: none;
+                                          padding: 10px 20px;
+                                          color: #ffffff;
+                                          display: block;
+                                          border-radius: 10px;
+                                        "
+                                      >
+                                        SHOP NOW
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                      <!-- Product 2 -->
+                      <tr>
+                        <td>
+                          <table
+                            role="presentation"
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            width="100%"
+                          >
+                            <tr>
+                              <!-- Product 2 image -->
+                              <td
+                                class="stack-column stack-column-center product-image"
+                                width="150"
+                                style="
+                                  width: 150px;
+                                  vertical-align: top;
+                                  padding-left: 30px;
+                                "
+                              >
+                                <img
+                                  src="assets/Fancy_Feast_Seafood.png"
+                                  class="center-on-mobile"
+                                  alt="Fruitables skinny minis treats"
+                                  width="150"
+                                  style="
+                                    width: 100%;
+                                    max-width: 150px;
+                                    height: auto;
+                                    display: block;
+                                  "
+                                />
+                              </td>
+                              <!-- Product 2 description -->
+                              <td
+                                class="stack-column stack-column-center product-description"
+                                style="
+                                  padding: 0 20px 40px;
+                                  vertical-align: top;
+                                  text-align: center;
+                                "
+                              >
+                                <h3
+                                  style="
+                                    margin: 0 0 15px;
+                                    font-family: 'Nunito', Calibri,
+                                      'Trebuchet MS', Verdana, Arial, sans-serif;
+                                    font-size: 24px;
+                                    line-height: 32px;
+                                    font-weight: 700;
+                                    color: #000000;
+                                  "
+                                >
+                                  Fancy Feast Classic Seafood Feast - Case of 24
+                                </h3>
+                                <p
+                                  style="
+                                    margin: 0 0 15px;
+                                    font-family: 'Nunito', Calibri,
+                                      'Trebuchet MS', Verdana, Arial, sans-serif;
+                                    font-size: 18px;
+                                    font-weight: 800;
+                                    color: #f60505;
+                                  "
+                                >
+                                  $18.99
+                                </p>
+                                <!-- Product 2 CTA -->
+                                <table
+                                  role="presentation"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  border="0"
+                                  class="center-on-mobile"
+                                >
+                                  <tr>
+                                    <td
+                                      class="button-td"
+                                      style="
+                                        border-radius: 10px;
+                                        background: #f5945c;
+                                      "
+                                    >
+                                      <a
+                                        href="#"
+                                        class="button-a"
+                                        style="
+                                          background: #f5945c;
+                                          border: 1px solid #f5945c;
+                                          font-family: 'Nunito', Calibri,
+                                            'Trebuchet MS', Verdana, Arial,
+                                            sans-serif;
+                                          font-size: 16px;
+                                          line-height: 16px;
+                                          font-weight: 700;
+                                          text-decoration: none;
+                                          padding: 10px 20px;
+                                          color: #ffffff;
+                                          display: block;
+                                          border-radius: 10px;
+                                        "
+                                      >
+                                        SHOP NOW
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                      <!-- Product 3 -->
+                      <tr>
+                        <td>
+                          <table
+                            role="presentation"
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            width="100%"
+                          >
+                            <tr>
+                              <!-- Product 3 image -->
+                              <td
+                                class="stack-column stack-column-center product-image"
+                                width="150"
+                                style="
+                                  width: 150px;
+                                  vertical-align: top;
+                                  padding-left: 30px;
+                                "
+                              >
+                                <img
+                                  src="assets/Cosequin.png"
+                                  class="center-on-mobile"
+                                  alt="Fruitables skinny minis treats"
+                                  width="150"
+                                  style="
+                                    width: 100%;
+                                    max-width: 150px;
+                                    height: auto;
+                                    display: block;
+                                  "
+                                />
+                              </td>
+                              <!-- Product 3 description -->
+                              <td
+                                class="stack-column stack-column-center product-description"
+                                style="
+                                  padding: 0 20px 40px;
+                                  vertical-align: top;
+                                  text-align: center;
+                                "
+                              >
+                                <h3
+                                  style="
+                                    margin: 0 0 15px;
+                                    font-family: 'Nunito', Calibri,
+                                      'Trebuchet MS', Verdana, Arial, sans-serif;
+                                    font-size: 24px;
+                                    line-height: 32px;
+                                    font-weight: 700;
+                                    color: #000000;
+                                  "
+                                >
+                                  Cosequin Joint Health Supplement Chewable
+                                  Tablets - 250 Count
+                                </h3>
+                                <p
+                                  style="
+                                    margin: 0 0 15px;
+                                    font-family: 'Nunito', Calibri,
+                                      'Trebuchet MS', Verdana, Arial, sans-serif;
+                                    font-size: 18px;
+                                    font-weight: 800;
+                                    color: #f60505;
+                                  "
+                                >
+                                  $49.99
+                                </p>
+                                <!-- Product 3 CTA -->
+                                <table
+                                  role="presentation"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  border="0"
+                                  class="center-on-mobile"
+                                >
+                                  <tr>
+                                    <td
+                                      class="button-td"
+                                      style="
+                                        border-radius: 10px;
+                                        background: #f5945c;
+                                      "
+                                    >
+                                      <a
+                                        href="#"
+                                        class="button-a"
+                                        style="
+                                          background: #f5945c;
+                                          border: 1px solid #f5945c;
+                                          font-family: 'Nunito', Calibri,
+                                            'Trebuchet MS', Verdana, Arial,
+                                            sans-serif;
+                                          font-size: 16px;
+                                          line-height: 16px;
+                                          font-weight: 700;
+                                          text-decoration: none;
+                                          padding: 10px 20px;
+                                          color: #ffffff;
+                                          display: block;
+                                          border-radius: 10px;
+                                        "
+                                      >
+                                        SHOP NOW
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
           <!-- Divider -->
           <tr>
             <td style="padding: 10px 20px">
@@ -266,6 +686,7 @@
               >
                 <tr>
                   <td
+                    height="1"
                     style="
                       font-size: 1px;
                       line-height: 1px;
@@ -339,11 +760,14 @@
                           <a href="#"
                             ><img
                               src="assets/Facebook_Color_Icon.png"
+                              width="25"
+                              height="25"
                               alt="Facebook icon"
                               style="
                                 border-radius: 5px;
                                 width: 25px;
                                 height: 25px;
+                                display: block;
                               "
                           /></a>
                         </td>
@@ -351,24 +775,30 @@
                           <a href="#"
                             ><img
                               src="assets/Instagram_Color_Icon.png"
+                              width="25"
+                              height="25"
                               alt="Facebook icon"
-                              style="width: 25px; height: 25px"
+                              style="width: 25px; height: 25px; display: block"
                           /></a>
                         </td>
                         <td style="padding: 10px 5px">
                           <a href="#"
                             ><img
                               src="assets/X_Square_Icon.png"
+                              width="25"
+                              height="25"
                               alt="Facebook icon"
-                              style="width: 25px; height: 25px"
+                              style="width: 25px; height: 25px; display: block"
                           /></a>
                         </td>
                         <td style="padding: 10px 5px">
                           <a href="#"
                             ><img
                               src="assets/Pinterest_Color_Logo.png"
+                              width="25"
+                              height="25"
                               alt="Facebook icon"
-                              style="width: 25px; height: 25px"
+                              style="width: 25px; height: 25px; display: block"
                           /></a>
                         </td>
                       </tr>
