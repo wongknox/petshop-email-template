@@ -21,9 +21,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <!--[if !mso]><!-->
     <style>
       :root {
         color-scheme: light dark;
@@ -72,11 +81,58 @@
         background: #555555 !important;
         border-color: #555555 !important;
       }
-
+      @media (prefers-color-scheme: dark) {
+        .hero-header {
+          color: #ffffff !important;
+        }
+        .hero-paragraph {
+          color: #ffffff !important;
+        }
+        .product-bg {
+          background-color: #3a3a3a !important;
+          color: #ffffff !important;
+        }
+        .product-main-header {
+          color: #ffffff !important;
+        }
+        .product-header {
+          color: #ffffff !important;
+        }
+        .product-price {
+          color: #f60505 !important;
+        }
+      }
+      [data-ogsc] .hero-header {
+        color: #ffffff !important;
+      }
+      [data-ogsc] .hero-paragraph {
+        color: #ffffff !important;
+      }
+      [data-ogsc] .product-bg {
+        background-color: #3a3a3a !important;
+      }
+      [data-ogsc] .product-main-header {
+        color: #ffffff !important;
+      }
+      [data-ogsc] .product-header {
+        color: #ffffff !important;
+      }
+      [data-ogsc] .product-price {
+        color: #f60505 !important;
+      }
       @media screen and (max-width: 600px) {
         .email-container {
           width: 100% !important;
           margin: auto !important;
+        }
+        .hero-text {
+          padding: 10px 40px 10px !important;
+        }
+        .hero-header {
+          font-size: 32px !important;
+        }
+        .hero-paragraph {
+          font-size: 16px !important;
         }
         .stack-column,
         .stack-column-center {
@@ -91,18 +147,54 @@
         .center-on-mobile {
           margin: 0 auto !important;
         }
+        .product-main-header {
+          font-size: 32px !important;
+        }
         .product-image {
           padding-left: 0 !important;
         }
         .product-description {
-          padding-top: 20px !important;
-          padding-bottom: 20px !important;
+          padding: 20px 10px 20px !important;
         }
         .responsive-container {
           width: 100% !important;
         }
+        .responsive-hero-image {
+          width: 100% !important;
+        }
+        .nav-bar-category {
+          font-size: 14px !important;
+        }
       }
     </style>
+    <!--<![endif]-->
+    <!--[if mso]>
+      <style type="text/css">
+        v\:* {
+          behavior: url(#default#VML);
+          display: inline-block;
+        }
+        o\:* {
+          behavior: url(#default#VML);
+          display: inline-block;
+        }
+        w\:* {
+          behavior: url(#default#VML);
+          display: inline-block;
+        }
+        .ExternalClass {
+          width: 100%;
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%;
+        }
+      </style>
+    <![endif]-->
   </head>
   <body
     width="100%"
@@ -113,1186 +205,1509 @@
       background-color: #f5f5f5;
     "
   >
+    <!-- Preview Text -->
+    <div
+      style="
+        display: none;
+        font-size: 1px;
+        line-height: 1px;
+        max-height: 0px;
+        max-width: 0px;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        font-family: sans-serif;
+      "
+    >
+      Stop scrolling and start spoiling! See our paw-some deals
+      inside.&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+    </div>
     <center style="width: 100%; background-color: #f5f5f5">
-      <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff">
-        <!-- Preview Text -->
-        <div
-          style="
-            display: none;
-            font-size: 1px;
-            line-height: 1px;
-            max-height: 0px;
-            max-width: 0px;
-            opacity: 0;
-            overflow: hidden;
-            mso-hide: all;
-            font-family: sans-serif;
-          "
-        >
-          Stop scrolling and start spoiling! See our paw-some deals inside.
-        </div>
-        <!-- Beginning of email content -->
-        <table
-          role="presentation"
-          cellspacing="0"
-          cellpadding="0"
-          border="0"
-          align="center"
-          width="600"
-          style="margin: 0 auto; width: 600px"
-          class="email-container"
-        >
-          <!-- Logo -->
-          <tr>
-            <td style="padding: 20px 0; text-align: center">
-              <img
-                src="assets/PetShop_Logo_New.svg"
-                width="200"
-                height="50"
-                alt="PetShop Logo"
-                border="0"
-                style="
-                  width: 100%;
-                  max-width: 200px;
-                  height: auto;
-                  font-family: sans-serif;
-                  font-size: 15px;
-                  line-height: 15px;
-                  color: #555555;
-                "
-              />
-            </td>
-          </tr>
-          <!-- Beginning of hero section -->
-          <tr>
-            <td style="background-color: #f5945c">
-              <table
-                role="presentation"
-                cellspacing="0"
-                cellpadding="0"
-                border="0"
-                width="100%"
-              >
-                <tr>
-                  <td
-                    style="
-                      font-size: 15px;
-                      font-family: sans-serif;
-                      line-height: 20px;
-                    "
-                  >
-                    <!-- Hero image -->
-                    <img
-                      src="assets/CorgiAndGoldieHeroImage.png"
-                      alt="Golden retriever with corgi"
-                      width="600"
-                      style="
-                        width: 100%;
-                        max-width: 600px;
-                        height: auto;
-                        display: block;
-                      "
-                    />
-                  </td>
-                </tr>
-                <!-- Hero header and text -->
-                <tr>
-                  <td>
-                    <table
-                      role="presentation"
-                      border="0"
-                      cellpadding="0"
-                      cellspacing="0"
-                      width="100%"
-                    >
-                      <tr>
-                        <td style="padding: 20px 70px; text-align: center">
-                          <h1
-                            style="
-                              margin: 0 0 30px;
-                              font-family: 'Akaya Kanadaka', Georgia, serif;
-                              font-size: 40px;
-                              line-height: 40px;
-                              color: #ffffff;
-                              font-weight: normal;
-                            "
-                          >
-                            Find everything your pet needs and more!
-                          </h1>
-                          <p
-                            style="
-                              margin: 0 0 30px;
-                              font-size: 16px;
-                              line-height: 32px;
-                              color: #ffffff;
-                              font-family: 'Nunito', Calibri, 'Trebuchet MS',
-                                Verdana, Arial, sans-serif;
-                            "
-                          >
-                            We're your one-stop shop for everything from premium
-                            nutrition to the latest toys and essential supplies.
-                            Skip the big box store and shop our curated
-                            selection, hand-picked for the health and happiness
-                            of your beloved companion.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <!-- Hero CTA -->
-                <tr>
-                  <td style="padding: 0 20px 40px">
-                    <table
-                      align="center"
-                      role="presentation"
-                      cellspacing="0"
-                      cellpadding="0"
-                      border="0"
-                      style="margin: auto"
-                      alt="Shop products CTA"
-                    >
-                      <tr>
-                        <td
-                          class="button-td"
-                          style="
-                            border-radius: 10px;
-                            background: #ffffff;
-                            text-align: center;
-                          "
-                        >
-                          <a
-                            href="#"
-                            class="button-a"
-                            style="
-                              background: #ffffff;
-                              border: 1px solid #ffffff;
-                              font-family: 'Nunito', Calibri, 'Trebuchet MS',
-                                Verdana, Arial, sans-serif;
-                              font-size: 16px;
-                              line-height: 16px;
-                              font-weight: 700;
-                              text-decoration: none;
-                              padding: 10px 20px;
-                              color: #000000;
-                              display: block;
-                              border-radius: 10px;
-                            "
-                          >
-                            SHOP NOW
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- End of hero section -->
-          <!-- Free shipping banner -->
-          <tr>
-            <td
+      <!-- Beginning of email content -->
+      <table
+        role="presentation"
+        cellspacing="0"
+        cellpadding="0"
+        border="0"
+        align="center"
+        width="600"
+        style="margin: 0 auto; width: 600px"
+        class="email-container"
+      >
+        <!-- Logo -->
+        <tr>
+          <td
+            style="
+              padding: 15px 0;
+              text-align: center;
+              background-color: #ffffff;
+            "
+          >
+            <img
+              src="https://knoxwong.com/wp-content/uploads/2025/10/PetShop_Logo.png"
+              width="200"
+              height="100"
+              alt="PetShop Logo"
+              border="0"
               style="
-                text-align: center;
-                padding: 10px 0;
-                font-size: 15px;
+                width: 100%;
+                max-width: 200px;
+                height: auto;
                 font-family: sans-serif;
-                line-height: 20px;
-              "
-            >
-              <a href="#">
-                <img
-                  src="assets/Free Shipping.png"
-                  alt="Free shipping banner"
-                  width="500"
-                  style="
-                    width: 100%;
-                    max-width: 500px;
-                    height: auto;
-                    display: block;
-                    margin: 0 auto;
-                  "
-                />
-              </a>
-            </td>
-          </tr>
-          <!-- Paw-some deals section -->
-          <tr>
-            <td style="padding: 20px 0">
-              <table
-                role="presentation"
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-                width="500"
-                align="center"
-                style="margin: 0 auto"
-                class="responsive-container"
-              >
-                <tr>
-                  <td style="background-color: #f7f7f5">
-                    <table
-                      role="presentation"
-                      border="0"
-                      cellpadding="0"
-                      cellspacing="0"
-                      width="100%"
-                    >
-                      <!-- Paw-some deals header -->
-                      <tr>
-                        <td style="text-align: center; padding: 20px 0 40px">
-                          <h1
-                            style="
-                              color: #000000;
-                              margin: 0;
-                              font-family: 'Nunito', Calibri, 'Trebuchet MS',
-                                Verdana, Arial, sans-serif;
-                              font-size: 40px;
-                              line-height: 40px;
-                              font-weight: 700;
-                            "
-                          >
-                            PAW-SOME DEALS
-                          </h1>
-                        </td>
-                      </tr>
-                      <!-- Product 1 -->
-                      <tr>
-                        <td>
-                          <table
-                            role="presentation"
-                            border="0"
-                            cellpadding="0"
-                            cellspacing="0"
-                            width="100%"
-                          >
-                            <tr>
-                              <!-- Product 1 image -->
-                              <td
-                                class="stack-column stack-column-center product-image"
-                                width="150"
-                                style="
-                                  width: 150px;
-                                  vertical-align: top;
-                                  padding-left: 30px;
-                                  font-size: 15px;
-                                  font-family: sans-serif;
-                                  line-height: 20px;
-                                "
-                              >
-                                <img
-                                  src="assets/Fruitables_Skinny_Minis.png"
-                                  class="center-on-mobile"
-                                  alt="Fruitables skinny minis treats"
-                                  width="150"
-                                  style="
-                                    width: 100%;
-                                    max-width: 150px;
-                                    height: auto;
-                                    display: block;
-                                  "
-                                />
-                              </td>
-                              <!-- Product 1 description -->
-                              <td
-                                class="stack-column stack-column-center product-description"
-                                style="
-                                  padding: 0 20px 40px;
-                                  vertical-align: top;
-                                  text-align: center;
-                                "
-                              >
-                                <h3
-                                  style="
-                                    margin: 0 0 15px;
-                                    font-family: 'Nunito', Calibri,
-                                      'Trebuchet MS', Verdana, Arial, sans-serif;
-                                    font-size: 24px;
-                                    line-height: 32px;
-                                    font-weight: 700;
-                                    color: #000000;
-                                  "
-                                >
-                                  Fruitables Skinny Minis - Pumpkin & Mango
-                                  Flavor
-                                </h3>
-                                <p
-                                  style="
-                                    margin: 0 0 15px;
-                                    font-family: 'Nunito', Calibri,
-                                      'Trebuchet MS', Verdana, Arial, sans-serif;
-                                    font-size: 18px;
-                                    font-weight: 800;
-                                    color: #f60505;
-                                  "
-                                >
-                                  $9.99
-                                </p>
-                                <!-- Product 1 CTA -->
-                                <table
-                                  role="presentation"
-                                  cellspacing="0"
-                                  cellpadding="0"
-                                  border="0"
-                                  class="center-on-mobile"
-                                  alt="Shop product CTA"
-                                >
-                                  <tr>
-                                    <td
-                                      class="button-td"
-                                      style="
-                                        border-radius: 10px;
-                                        background: #f5945c;
-                                      "
-                                    >
-                                      <a
-                                        href="#"
-                                        class="button-a"
-                                        style="
-                                          background: #f5945c;
-                                          border: 1px solid #f5945c;
-                                          font-family: 'Nunito', Calibri,
-                                            'Trebuchet MS', Verdana, Arial,
-                                            sans-serif;
-                                          font-size: 16px;
-                                          line-height: 16px;
-                                          font-weight: 700;
-                                          text-decoration: none;
-                                          padding: 10px 20px;
-                                          color: #ffffff;
-                                          display: block;
-                                          border-radius: 10px;
-                                        "
-                                      >
-                                        SHOP NOW
-                                      </a>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-
-                      <!-- Product 2 -->
-                      <tr>
-                        <td>
-                          <table
-                            role="presentation"
-                            border="0"
-                            cellpadding="0"
-                            cellspacing="0"
-                            width="100%"
-                          >
-                            <tr>
-                              <!-- Product 2 image -->
-                              <td
-                                class="stack-column stack-column-center product-image"
-                                width="150"
-                                style="
-                                  width: 150px;
-                                  vertical-align: top;
-                                  padding-left: 30px;
-                                  font-size: 15px;
-                                  font-family: sans-serif;
-                                  line-height: 20px;
-                                "
-                              >
-                                <img
-                                  src="assets/Fancy_Feast_Seafood.png"
-                                  class="center-on-mobile"
-                                  alt="Fancy feast seafood feast image"
-                                  width="150"
-                                  style="
-                                    width: 100%;
-                                    max-width: 150px;
-                                    height: auto;
-                                    display: block;
-                                  "
-                                />
-                              </td>
-                              <!-- Product 2 description -->
-                              <td
-                                class="stack-column stack-column-center product-description"
-                                style="
-                                  padding: 0 20px 40px;
-                                  vertical-align: top;
-                                  text-align: center;
-                                "
-                              >
-                                <h3
-                                  style="
-                                    margin: 0 0 15px;
-                                    font-family: 'Nunito', Calibri,
-                                      'Trebuchet MS', Verdana, Arial, sans-serif;
-                                    font-size: 24px;
-                                    line-height: 32px;
-                                    font-weight: 700;
-                                    color: #000000;
-                                  "
-                                >
-                                  Fancy Feast Classic Seafood Feast - Case of 24
-                                </h3>
-                                <p
-                                  style="
-                                    margin: 0 0 15px;
-                                    font-family: 'Nunito', Calibri,
-                                      'Trebuchet MS', Verdana, Arial, sans-serif;
-                                    font-size: 18px;
-                                    font-weight: 800;
-                                    color: #f60505;
-                                  "
-                                >
-                                  $18.99
-                                </p>
-                                <!-- Product 2 CTA -->
-                                <table
-                                  role="presentation"
-                                  cellspacing="0"
-                                  cellpadding="0"
-                                  border="0"
-                                  class="center-on-mobile"
-                                  alt="Shop product CTA"
-                                >
-                                  <tr>
-                                    <td
-                                      class="button-td"
-                                      style="
-                                        border-radius: 10px;
-                                        background: #f5945c;
-                                      "
-                                    >
-                                      <a
-                                        href="#"
-                                        class="button-a"
-                                        style="
-                                          background: #f5945c;
-                                          border: 1px solid #f5945c;
-                                          font-family: 'Nunito', Calibri,
-                                            'Trebuchet MS', Verdana, Arial,
-                                            sans-serif;
-                                          font-size: 16px;
-                                          line-height: 16px;
-                                          font-weight: 700;
-                                          text-decoration: none;
-                                          padding: 10px 20px;
-                                          color: #ffffff;
-                                          display: block;
-                                          border-radius: 10px;
-                                        "
-                                      >
-                                        SHOP NOW
-                                      </a>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-
-                      <!-- Product 3 -->
-                      <tr>
-                        <td>
-                          <table
-                            role="presentation"
-                            border="0"
-                            cellpadding="0"
-                            cellspacing="0"
-                            width="100%"
-                          >
-                            <tr>
-                              <!-- Product 3 image -->
-                              <td
-                                class="stack-column stack-column-center product-image"
-                                width="150"
-                                style="
-                                  width: 150px;
-                                  vertical-align: top;
-                                  padding-left: 30px;
-                                  font-size: 15px;
-                                  font-family: sans-serif;
-                                  line-height: 20px;
-                                "
-                              >
-                                <img
-                                  src="assets/Cosequin.png"
-                                  class="center-on-mobile"
-                                  alt="Cosequin supplements image"
-                                  width="150"
-                                  style="
-                                    width: 100%;
-                                    max-width: 150px;
-                                    height: auto;
-                                    display: block;
-                                  "
-                                />
-                              </td>
-                              <!-- Product 3 description -->
-                              <td
-                                class="stack-column stack-column-center product-description"
-                                style="
-                                  padding: 0 20px 40px;
-                                  vertical-align: top;
-                                  text-align: center;
-                                "
-                              >
-                                <h3
-                                  style="
-                                    margin: 0 0 15px;
-                                    font-family: 'Nunito', Calibri,
-                                      'Trebuchet MS', Verdana, Arial, sans-serif;
-                                    font-size: 24px;
-                                    line-height: 32px;
-                                    font-weight: 700;
-                                    color: #000000;
-                                  "
-                                >
-                                  Cosequin Joint Health Supplement Chewable
-                                  Tablets - 250 Count
-                                </h3>
-                                <p
-                                  style="
-                                    margin: 0 0 15px;
-                                    font-family: 'Nunito', Calibri,
-                                      'Trebuchet MS', Verdana, Arial, sans-serif;
-                                    font-size: 18px;
-                                    font-weight: 800;
-                                    color: #f60505;
-                                  "
-                                >
-                                  $49.99
-                                </p>
-                                <!-- Product 3 CTA -->
-                                <table
-                                  role="presentation"
-                                  cellspacing="0"
-                                  cellpadding="0"
-                                  border="0"
-                                  class="center-on-mobile"
-                                  alt="Shop product CTA"
-                                >
-                                  <tr>
-                                    <td
-                                      class="button-td"
-                                      style="
-                                        border-radius: 10px;
-                                        background: #f5945c;
-                                      "
-                                    >
-                                      <a
-                                        href="#"
-                                        class="button-a"
-                                        style="
-                                          background: #f5945c;
-                                          border: 1px solid #f5945c;
-                                          font-family: 'Nunito', Calibri,
-                                            'Trebuchet MS', Verdana, Arial,
-                                            sans-serif;
-                                          font-size: 16px;
-                                          line-height: 16px;
-                                          font-weight: 700;
-                                          text-decoration: none;
-                                          padding: 10px 20px;
-                                          color: #ffffff;
-                                          display: block;
-                                          border-radius: 10px;
-                                        "
-                                      >
-                                        SHOP NOW
-                                      </a>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- Divider -->
-          <tr>
-            <td style="padding: 10px 20px">
-              <table
-                role="presentation"
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-                width="100%"
-              >
-                <tr>
-                  <td
-                    height="1"
-                    style="
-                      font-size: 1px;
-                      line-height: 1px;
-                      background-color: #000000;
-                    "
-                  >
-                    &nbsp;
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- Adopt a kitten section -->
-          <tr>
-            <td style="padding: 20px 0">
-              <table
-                role="presentation"
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-                width="500"
-                align="center"
-                style="margin: 0 auto"
-                class="responsive-container"
-              >
-                <!-- Kitten image -->
-                <tr>
-                  <td
-                    style="
-                      font-size: 15px;
-                      font-family: sans-serif;
-                      line-height: 20px;
-                    "
-                  >
-                    <img
-                      src="assets/Adopt a Kitten Today.svg"
-                      alt="Adopt a kitten image"
-                      style="
-                        width: 100%;
-                        max-width: 500px;
-                        height: auto;
-                        display: block;
-                      "
-                    />
-                  </td>
-                </tr>
-                <!-- Kitten description -->
-                <tr>
-                  <td style="text-align: center">
-                    <p
-                      style="
-                        margin: 20px 0 30px;
-                        font-size: 16px;
-                        line-height: 32px;
-                        color: #000000;
-                        font-family: 'Nunito', Calibri, 'Trebuchet MS', Verdana,
-                          Arial, sans-serif;
-                      "
-                    >
-                      Bring endless cuddles, playful pounces, and unconditional
-                      love into your life. Browse our available kittens and
-                      complete your family. Your new tiny best friend is
-                      waiting!
-                    </p>
-                  </td>
-                </tr>
-                <!-- View kittens CTA -->
-                <tr>
-                  <td>
-                    <table
-                      role="presentation"
-                      cellspacing="0"
-                      cellpadding="0"
-                      border="0"
-                      class="center-on-mobile"
-                      alt="View kittens CTA"
-                    >
-                      <tr>
-                        <td
-                          class="button-td"
-                          style="border-radius: 10px; background: #f5945c"
-                        >
-                          <a
-                            href="#"
-                            class="button-a"
-                            style="
-                              background: #f5945c;
-                              border: 1px solid #f5945c;
-                              font-family: 'Nunito', Calibri, 'Trebuchet MS',
-                                Verdana, Arial, sans-serif;
-                              font-size: 16px;
-                              line-height: 16px;
-                              font-weight: 700;
-                              text-decoration: none;
-                              padding: 10px 20px;
-                              color: #ffffff;
-                              display: block;
-                              border-radius: 10px;
-                            "
-                          >
-                            VIEW KITTENS
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- Blog section -->
-          <tr>
-            <td style="padding: 20px 0">
-              <table
-                role="presentation"
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-                width="500"
-                align="center"
-                style="margin: 0 auto"
-                class="responsive-container"
-              >
-                <tr>
-                  <td style="background-color: #f7f7f5">
-                    <table
-                      role="presentation"
-                      border="0"
-                      cellpadding="0"
-                      cellspacing="0"
-                      width="100%"
-                    >
-                      <!-- Blog header -->
-                      <tr>
-                        <td
-                          style="
-                            background-color: #0a145d;
-                            text-align: center;
-                            padding: 20px 0;
-                          "
-                        >
-                          <h1
-                            style="
-                              color: #ffffff;
-                              font-family: 'Akaya Kanadaka', Georgia, serif;
-                              font-size: 40px;
-                              line-height: 40px;
-                              color: #ffffff;
-                              font-weight: normal;
-                            "
-                          >
-                            Our Latest Blogs
-                          </h1>
-                        </td>
-                      </tr>
-                      <!-- Blog stories -->
-                      <tr>
-                        <td>
-                          <table
-                            role="presentation"
-                            border="0"
-                            cellpadding="0"
-                            cellspacing="0"
-                            width="100%"
-                          >
-                            <tr>
-                              <!-- Blog 1 image -->
-                              <td
-                                class="stack-column stack-column-center product-image"
-                                width="200"
-                                style="
-                                  width: 200px;
-                                  vertical-align: top;
-                                  padding-left: 20px;
-                                  padding-top: 30px;
-                                  font-size: 15px;
-                                  font-family: sans-serif;
-                                  line-height: 20px;
-                                "
-                              >
-                                <img
-                                  src="assets/Shiba_Brushing_Teeth.png"
-                                  alt="Brushing shiba inu's teeth image"
-                                  class="center-on-mobile"
-                                  width="200"
-                                  style="
-                                    width: 100%;
-                                    max-width: 200px;
-                                    height: auto;
-                                    display: block;
-                                  "
-                                />
-                              </td>
-                              <td
-                                class="stack-column stack-column-center product-description"
-                                style="
-                                  padding: 30px 20px 40px;
-                                  vertical-align: top;
-                                  text-align: center;
-                                "
-                              >
-                                <!-- Blog 1 header -->
-                                <h3
-                                  style="
-                                    margin: 0 0 15px;
-                                    font-family: 'Nunito', Calibri,
-                                      'Trebuchet MS', Verdana, Arial, sans-serif;
-                                    font-size: 24px;
-                                    line-height: 32px;
-                                    font-weight: 700;
-                                    color: #000000;
-                                  "
-                                >
-                                  The Doggy Dental Do's and Don'ts
-                                </h3>
-                                <!-- Blog 1 description -->
-                                <p
-                                  style="
-                                    font-size: 16px;
-                                    line-height: 24px;
-                                    color: #000000;
-                                    font-family: 'Nunito', Calibri,
-                                      'Trebuchet MS', Verdana, Arial, sans-serif;
-                                  "
-                                >
-                                  Don't let stinky breath be your new normal!
-                                  Learn the essential tips and easy
-                                  techniques—from brushing to chew toys—to keep
-                                  your dog's teeth sparkling.
-                                </p>
-                                <!-- Blog 1 CTA -->
-                                <table
-                                  role="presentation"
-                                  cellspacing="0"
-                                  cellpadding="0"
-                                  border="0"
-                                  class="center-on-mobile"
-                                  alt="Read blog CTA"
-                                >
-                                  <tr>
-                                    <td
-                                      class="button-td"
-                                      style="
-                                        border-radius: 10px;
-                                        background: #f5945c;
-                                      "
-                                    >
-                                      <a
-                                        href="#"
-                                        class="button-a"
-                                        style="
-                                          background: #f5945c;
-                                          border: 1px solid #f5945c;
-                                          font-family: 'Nunito', Calibri,
-                                            'Trebuchet MS', Verdana, Arial,
-                                            sans-serif;
-                                          font-size: 16px;
-                                          line-height: 16px;
-                                          font-weight: 700;
-                                          text-decoration: none;
-                                          padding: 10px 20px;
-                                          color: #ffffff;
-                                          display: block;
-                                          border-radius: 10px;
-                                        "
-                                      >
-                                        READ MORE
-                                      </a>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                            <tr>
-                              <!-- Blog 2 image -->
-                              <td
-                                class="stack-column stack-column-center product-image"
-                                width="200"
-                                style="
-                                  width: 200px;
-                                  vertical-align: top;
-                                  padding-left: 20px;
-                                  padding-top: 30px;
-                                  font-size: 15px;
-                                  font-family: sans-serif;
-                                  line-height: 20px;
-                                "
-                              >
-                                <img
-                                  src="assets/Corgi_Puppy_Eating.png"
-                                  alt="Corgi puppy eating food image"
-                                  class="center-on-mobile"
-                                  width="200"
-                                  style="
-                                    width: 100%;
-                                    max-width: 200px;
-                                    height: auto;
-                                    display: block;
-                                  "
-                                />
-                              </td>
-                              <td
-                                class="stack-column stack-column-center product-description"
-                                style="
-                                  padding: 30px 20px 40px;
-                                  vertical-align: top;
-                                  text-align: center;
-                                "
-                              >
-                                <!-- Blog 2 header -->
-                                <h3
-                                  style="
-                                    margin: 0 0 15px;
-                                    font-family: 'Nunito', Calibri,
-                                      'Trebuchet MS', Verdana, Arial, sans-serif;
-                                    font-size: 24px;
-                                    line-height: 32px;
-                                    font-weight: 700;
-                                    color: #000000;
-                                  "
-                                >
-                                  Puppy Nutrition 101: A Guide to First-Year
-                                  Feeding
-                                </h3>
-                                <!-- Blog 2 description -->
-                                <p
-                                  style="
-                                    font-size: 16px;
-                                    line-height: 24px;
-                                    color: #000000;
-                                    font-family: 'Nunito', Calibri,
-                                      'Trebuchet MS', Verdana, Arial, sans-serif;
-                                  "
-                                >
-                                  Learn what to look for in puppy formulas, how
-                                  often to feed, and the key nutrients that
-                                  support rapid growth and development.
-                                </p>
-                                <!-- Blog 2 CTA -->
-                                <table
-                                  role="presentation"
-                                  cellspacing="0"
-                                  cellpadding="0"
-                                  border="0"
-                                  class="center-on-mobile"
-                                  alt="Read blog CTA"
-                                >
-                                  <tr>
-                                    <td
-                                      class="button-td"
-                                      style="
-                                        border-radius: 10px;
-                                        background: #f5945c;
-                                      "
-                                    >
-                                      <a
-                                        href="#"
-                                        class="button-a"
-                                        style="
-                                          background: #f5945c;
-                                          border: 1px solid #f5945c;
-                                          font-family: 'Nunito', Calibri,
-                                            'Trebuchet MS', Verdana, Arial,
-                                            sans-serif;
-                                          font-size: 16px;
-                                          line-height: 16px;
-                                          font-weight: 700;
-                                          text-decoration: none;
-                                          padding: 10px 20px;
-                                          color: #ffffff;
-                                          display: block;
-                                          border-radius: 10px;
-                                        "
-                                      >
-                                        READ MORE
-                                      </a>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- Divider -->
-          <tr>
-            <td style="padding: 10px 20px">
-              <table
-                role="presentation"
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-                width="100%"
-              >
-                <tr>
-                  <td
-                    height="1"
-                    style="
-                      font-size: 1px;
-                      line-height: 1px;
-                      background-color: #000000;
-                    "
-                  >
-                    &nbsp;
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- Footer -->
-          <tr>
-            <td
-              style="
-                padding: 20px;
-                text-align: center;
-                font-family: 'Nunito', Calibri, 'Trebuchet MS', Verdana, Arial,
-                  sans-serif;
-                font-size: 12px;
+                font-size: 15px;
                 line-height: 15px;
                 color: #000000;
+                display: block;
+                margin: 0 auto;
               "
+            />
+          </td>
+        </tr>
+        <!-- Beginning of hero section -->
+        <tr>
+          <td
+            align="center"
+            style="background-color: #f5945c"
+            class="hero-container"
+          >
+            <table
+              role="presentation"
+              cellspacing="0"
+              cellpadding="0"
+              border="0"
+              width="100%"
             >
-              <table
-                role="presentation"
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-                width="100%"
-              >
-                <!-- Logo -->
-                <tr>
-                  <td style="padding: 0px 0; text-align: center">
-                    <img
-                      src="assets/PetShop_Logo_New.svg"
-                      width="200"
-                      height="50"
-                      alt="PetShop Logo"
-                      border="0"
-                      style="
-                        width: 100%;
-                        max-width: 200px;
-                        height: auto;
-                        font-family: sans-serif;
-                        font-size: 15px;
-                        line-height: 15px;
-                        color: #555555;
-                      "
-                    />
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <p>@ All Rights Reserved</p>
-                  </td>
-                </tr>
-                <!-- Social icons -->
-                <tr>
-                  <td>
-                    <table
-                      role="presentation"
-                      border="0"
-                      cellpadding="0"
-                      cellspacing="0"
-                      align="center"
-                      style="margin: 0 auto"
-                    >
-                      <tr>
-                        <td style="padding: 10px 5px">
-                          <a href="https://www.facebook.com/"
-                            ><img
-                              src="assets/Facebook_Color_Icon.png"
-                              width="25"
-                              height="25"
-                              alt="Facebook icon"
+              <!-- Navigation bar -->
+              <tr>
+                <td style="background-color: #ffffff; padding-bottom: 10px">
+                  <table
+                    role="presentation"
+                    cellpadding="0"
+                    cellspacing="0"
+                    border="0"
+                    align="center"
+                  >
+                    <tr>
+                      <td class="nav-bar" style="padding: 0 40px 0 0">
+                        <a
+                          class="nav-bar-category"
+                          href="#"
+                          style="
+                            color: #000000;
+                            font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                              Verdana, Arial, sans-serif;
+                            font-size: 18px;
+                            font-weight: 600;
+                            text-decoration: none;
+                          "
+                          >DOG</a
+                        >
+                      </td>
+                      <td class="nav-bar" style="padding: 0 40px 0 0">
+                        <a
+                          class="nav-bar-category"
+                          href="#"
+                          style="
+                            color: #000000;
+                            font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                              Verdana, Arial, sans-serif;
+                            font-size: 18px;
+                            font-weight: 600;
+                            text-decoration: none;
+                          "
+                          >CAT</a
+                        >
+                      </td>
+                      <td class="nav-bar" style="padding: 0 40px 0 0">
+                        <a
+                          class="nav-bar-category"
+                          href="#"
+                          style="
+                            color: #000000;
+                            font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                              Verdana, Arial, sans-serif;
+                            font-size: 18px;
+                            font-weight: 600;
+                            text-decoration: none;
+                          "
+                          >OTHER ANIMALS</a
+                        >
+                      </td>
+                      <td class="nav-bar" style="padding: 0 40px 0 0">
+                        <a
+                          class="nav-bar-category"
+                          href="#"
+                          style="
+                            color: #000000;
+                            font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                              Verdana, Arial, sans-serif;
+                            font-size: 18px;
+                            font-weight: 600;
+                            text-decoration: none;
+                          "
+                          >ADOPT</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          class="nav-bar-category"
+                          href="#"
+                          style="
+                            color: #000000;
+                            font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                              Verdana, Arial, sans-serif;
+                            font-size: 18px;
+                            font-weight: 600;
+                            text-decoration: none;
+                          "
+                          >PHARMACY</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- Hero image -->
+              <tr>
+                <td>
+                  <table
+                    role="presentation"
+                    cellpadding="0"
+                    cellspacing="0"
+                    border="0"
+                    width="600"
+                    style="width: 600px"
+                    align="center"
+                    class="responsive-hero-image"
+                  >
+                    <tr>
+                      <td style="font-size: 0; line-height: 0">
+                        <img
+                          src="https://knoxwong.com/wp-content/uploads/2025/10/CorgiAndGoldieHeroImage.png"
+                          alt="Golden retriever with corgi"
+                          width="600"
+                          height="367"
+                          style="
+                            width: 100%;
+                            max-width: 600px;
+                            height: auto;
+                            display: block;
+                            margin: 0 auto;
+                          "
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- Hero header and text -->
+              <tr>
+                <td>
+                  <table
+                    role="presentation"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <tr align="center">
+                      <td
+                        class="hero-text"
+                        style="
+                          padding: 20px 70px 20px;
+                          text-align: center;
+                          vertical-align: top;
+                        "
+                      >
+                        <!-- Hero header -->
+                        <h1
+                          class="hero-header"
+                          style="
+                            margin: 0;
+                            font-family: 'Akaya Kanadaka', Georgia, serif;
+                            font-size: 40px;
+                            line-height: 48px;
+                            color: #ffffff;
+                            font-weight: normal;
+                          "
+                        >
+                          Find everything your pet needs and more!
+                        </h1>
+                        <!-- Hero description -->
+                        <p
+                          class="hero-paragraph"
+                          style="
+                            margin: 0;
+                            font-size: 18px;
+                            line-height: 36px;
+                            color: #ffffff;
+                            font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                              Verdana, Arial, sans-serif;
+                            padding: 10px 0;
+                          "
+                        >
+                          We're your one-stop shop for everything from premium
+                          nutrition to the latest toys and essential supplies.
+                          Skip the big box store and shop our curated selection,
+                          hand-picked for the health and happiness of your
+                          beloved companion.
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- Hero CTA -->
+              <tr>
+                <td style="padding: 10px 0 40px">
+                  <table
+                    align="center"
+                    role="presentation"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                    style="margin: auto"
+                    alt="Shop products CTA button"
+                  >
+                    <tr>
+                      <td
+                        class="button-td"
+                        style="
+                          border-radius: 10px;
+                          background: #ffffff;
+                          text-align: center;
+                        "
+                      >
+                        <!--[if mso]>
+                          <v:roundrect
+                            xmlns:v="urn:schemas-microsoft-com:vml"
+                            xmlns:w="urn:schemas-microsoft-com:office:word"
+                            href="#"
+                            style="
+                              height: 50px;
+                              v-text-anchor: middle;
+                              width: 200px;
+                            "
+                            arcsize="16%"
+                            strokecolor="#ffffff"
+                            fillcolor="#ffffff"
+                          >
+                            <w:anchorlock />
+                            <center
                               style="
-                                border-radius: 5px;
-                                width: 25px;
-                                height: 25px;
-                                display: block;
+                                background-color: #ffffff;
+                                color: #000000;
+                                font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                  Verdana, Arial, sans-serif;
+                                text-decoration: none;
+                                font-size: 18px;
+                                font-weight: 700;
                               "
-                          /></a>
-                        </td>
-                        <td style="padding: 10px 5px">
-                          <a href="https://www.instagram.com/"
-                            ><img
-                              src="assets/Instagram_Color_Icon.png"
-                              width="25"
-                              height="25"
-                              alt="Instagram icon"
-                              style="width: 25px; height: 25px; display: block"
-                          /></a>
-                        </td>
-                        <td style="padding: 10px 5px">
-                          <a href="https://x.com/"
-                            ><img
-                              src="assets/X_Square_Icon.png"
-                              width="25"
-                              height="25"
-                              alt="Facebook icon"
-                              style="width: 25px; height: 25px; display: block"
-                          /></a>
-                        </td>
-                        <td style="padding: 10px 5px">
-                          <a href="https://www.pinterest.com/"
-                            ><img
-                              src="assets/Pinterest_Color_Logo.png"
-                              width="25"
-                              height="25"
-                              alt="Facebook icon"
-                              style="width: 25px; height: 25px; display: block"
-                          /></a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <!-- Address -->
-                <tr>
-                  <td>
-                    <p>Pet Shop, 7-11 Commercial Ct, Belfast Bt1 2NB</p>
-                  </td>
-                </tr>
-                <!-- Unsubscribe/View in Browser -->
-                <tr>
-                  <td>
-                    <table
-                      role="presentation"
-                      border="0"
-                      cellpadding="0"
-                      cellspacing="0"
-                      width="100%"
-                    >
-                      <tr>
-                        <td style="text-align: center; padding: 10px">
-                          <a
-                            href="#"
-                            style="color: #888888; text-decoration: none"
-                            >Unsubscribe</a
-                          >
-                          <span style="color: #888888">&nbsp;|&nbsp;</span>
-                          <a
-                            href="#"
-                            style="color: #888888; text-decoration: none"
-                            >View in Browser</a
-                          >
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </div>
+                            >
+                              SHOP NOW
+                            </center>
+                          </v:roundrect>
+                        <![endif]-->
+
+                        <!--[if !mso]><!-->
+                        <a
+                          href="#"
+                          class="button-a"
+                          style="
+                            background: #ffffff;
+                            border: 1px solid #ffffff;
+                            font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                              Verdana, Arial, sans-serif;
+                            font-size: 18px;
+                            line-height: 18px;
+                            font-weight: 700;
+                            text-decoration: none;
+                            padding: 15px 55px;
+                            color: #000000;
+                            display: block;
+                            border-radius: 10px;
+                          "
+                        >
+                          SHOP NOW
+                        </a>
+                        <!--<![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- End of hero section -->
+        <!-- Free shipping banner -->
+        <tr>
+          <td align="center" style="background-color: #ffffff; padding: 20px 0">
+            <a href="#">
+              <img
+                src="https://knoxwong.com/wp-content/uploads/2025/10/Free_Shipping.png"
+                alt="Free shipping on orders over $49 banner"
+                width="500"
+                height="115"
+                style="
+                  font-family: sans-serif;
+                  font-size: 15px;
+                  line-height: 20px;
+                  width: 100%;
+                  max-width: 500px;
+                  height: auto;
+                  display: block;
+                  margin: 0 auto;
+                "
+              />
+            </a>
+          </td>
+        </tr>
+        <!-- Paw-some deals section -->
+        <tr>
+          <td style="background-color: #ffffff; padding: 20px 0">
+            <table
+              role="presentation"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              width="500"
+              align="center"
+              style="margin: 0 auto"
+              class="responsive-container"
+            >
+              <tr>
+                <td
+                  class="product-bg"
+                  style="
+                    background-color: #f7f7f5;
+                    color: #000000;
+                    border-radius: 10px;
+                  "
+                >
+                  <table
+                    role="presentation"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <!-- Paw-some deals header -->
+                    <tr>
+                      <td
+                        class="product-main-header"
+                        style="
+                          text-align: center;
+                          padding: 40px 0;
+                          color: #000000;
+                        "
+                      >
+                        <h1
+                          class="product-main-header"
+                          style="
+                            color: #000000;
+                            margin: 0;
+                            font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                              Verdana, Arial, sans-serif;
+                            font-size: 40px;
+                            line-height: 40px;
+                            font-weight: 700;
+                          "
+                        >
+                          PAW-SOME DEALS
+                        </h1>
+                      </td>
+                    </tr>
+                    <!-- Product 1 -->
+                    <tr>
+                      <td>
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <!-- Product 1 image -->
+                            <td
+                              class="stack-column stack-column-center product-image"
+                              width="150"
+                              height="150"
+                              style="
+                                width: 150px;
+                                vertical-align: center;
+                                padding-left: 30px;
+                                font-size: 15px;
+                                font-family: sans-serif;
+                                line-height: 20px;
+                              "
+                            >
+                              <table
+                                role="presentation"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                                width="150"
+                              >
+                                <tr>
+                                  <td>
+                                    <img
+                                      src="https://knoxwong.com/wp-content/uploads/2025/10/Fruitables_Skinny_Minis.png"
+                                      class="center-on-mobile"
+                                      alt="Fruitables skinny minis treats"
+                                      width="150"
+                                      style="
+                                        width: 100%;
+                                        max-width: 150px;
+                                        height: auto;
+                                        display: block;
+                                      "
+                                    />
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <!-- Product 1 description -->
+                            <td
+                              class="stack-column stack-column-center product-description"
+                              width="300"
+                              style="
+                                width: 100%;
+                                max-width: 300px;
+                                padding: 0 20px 40px;
+                                vertical-align: top;
+                                text-align: center;
+                              "
+                            >
+                              <h3
+                                class="product-header"
+                                style="
+                                  font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                    Verdana, Arial, sans-serif;
+                                  font-size: 24px;
+                                  line-height: 32px;
+                                  font-weight: 700;
+                                  color: #000000;
+                                "
+                              >
+                                Fruitables Skinny Minis - Pumpkin & Mango Flavor
+                              </h3>
+                              <p
+                                class="product-price"
+                                style="
+                                  font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                    Verdana, Arial, sans-serif;
+                                  font-size: 18px;
+                                  font-weight: 800;
+                                  color: #f60505;
+                                "
+                              >
+                                $9.99
+                              </p>
+                              <!-- Product 1 CTA -->
+                              <table
+                                align="center"
+                                role="presentation"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                                style="margin: auto"
+                                alt="Shop products CTA button"
+                              >
+                                <tr>
+                                  <td
+                                    class="button-td"
+                                    style="
+                                      border-radius: 10px;
+                                      background: #f5945c;
+                                      text-align: center;
+                                    "
+                                  >
+                                    <!--[if mso]>
+                                      <v:roundrect
+                                        xmlns:v="urn:schemas-microsoft-com:vml"
+                                        xmlns:w="urn:schemas-microsoft-com:office:word"
+                                        href="#"
+                                        style="
+                                          height: 50px;
+                                          v-text-anchor: middle;
+                                          width: 200px;
+                                        "
+                                        arcsize="16%"
+                                        strokecolor="#F5945C"
+                                        fillcolor="#F5945C"
+                                      >
+                                        <w:anchorlock />
+                                        <center
+                                          style="
+                                            background-color: #f5945c;
+                                            color: #ffffff;
+                                            font-family: 'Nunito', Calibri,
+                                              'Trebuchet MS', Verdana, Arial,
+                                              sans-serif;
+                                            text-decoration: none;
+                                            font-size: 18px;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          SHOP NOW
+                                        </center>
+                                      </v:roundrect>
+                                    <![endif]-->
+
+                                    <!--[if !mso]><!-->
+                                    <a
+                                      href="#"
+                                      class="button-a"
+                                      style="
+                                        background: #f5945c;
+                                        border: 1px solid #f5945c;
+                                        font-family: 'Nunito', Calibri,
+                                          'Trebuchet MS', Verdana, Arial,
+                                          sans-serif;
+                                        font-size: 18px;
+                                        line-height: 18px;
+                                        font-weight: 700;
+                                        text-decoration: none;
+                                        padding: 15px 55px;
+                                        color: #ffffff;
+                                        display: block;
+                                        border-radius: 10px;
+                                      "
+                                    >
+                                      SHOP NOW
+                                    </a>
+                                    <!--<![endif]-->
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- Product 2 -->
+                    <tr>
+                      <td>
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <!-- Product 2 image -->
+                            <td
+                              class="stack-column stack-column-center product-image"
+                              width="150"
+                              height="150"
+                              style="
+                                width: 150px;
+                                vertical-align: center;
+                                padding-left: 30px;
+                                font-size: 15px;
+                                font-family: sans-serif;
+                                line-height: 20px;
+                              "
+                            >
+                              <table
+                                role="presentation"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                                width="150"
+                              >
+                                <tr>
+                                  <td>
+                                    <img
+                                      src="https://knoxwong.com/wp-content/uploads/2025/10/Fancy_Feast_Seafood.png"
+                                      class="center-on-mobile"
+                                      alt="Fancy Feast seafood feast"
+                                      width="150"
+                                      style="
+                                        width: 100%;
+                                        max-width: 150px;
+                                        height: auto;
+                                        display: block;
+                                      "
+                                    />
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <!-- Product 2 description -->
+                            <td
+                              class="stack-column stack-column-center product-description"
+                              width="300"
+                              style="
+                                width: 100%;
+                                max-width: 300px;
+                                padding: 0 20px 40px;
+                                vertical-align: top;
+                                text-align: center;
+                              "
+                            >
+                              <h3
+                                class="product-header"
+                                style="
+                                  font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                    Verdana, Arial, sans-serif;
+                                  font-size: 24px;
+                                  line-height: 32px;
+                                  font-weight: 700;
+                                  color: #000000;
+                                "
+                              >
+                                Fancy Feast Classic Seasfood - Case of 24
+                              </h3>
+                              <p
+                                class="product-price"
+                                style="
+                                  font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                    Verdana, Arial, sans-serif;
+                                  font-size: 18px;
+                                  font-weight: 800;
+                                  color: #f60505;
+                                "
+                              >
+                                $18.99
+                              </p>
+                              <!-- Product 2 CTA -->
+                              <table
+                                align="center"
+                                role="presentation"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                                style="margin: auto"
+                                alt="Shop products CTA button"
+                              >
+                                <tr>
+                                  <td
+                                    class="button-td"
+                                    style="
+                                      border-radius: 10px;
+                                      background: #f5945c;
+                                      text-align: center;
+                                    "
+                                  >
+                                    <!--[if mso]>
+                                      <v:roundrect
+                                        xmlns:v="urn:schemas-microsoft-com:vml"
+                                        xmlns:w="urn:schemas-microsoft-com:office:word"
+                                        href="#"
+                                        style="
+                                          height: 50px;
+                                          v-text-anchor: middle;
+                                          width: 200px;
+                                        "
+                                        arcsize="16%"
+                                        strokecolor="#F5945C"
+                                        fillcolor="#F5945C"
+                                      >
+                                        <w:anchorlock />
+                                        <center
+                                          style="
+                                            background-color: #f5945c;
+                                            color: #ffffff;
+                                            font-family: 'Nunito', Calibri,
+                                              'Trebuchet MS', Verdana, Arial,
+                                              sans-serif;
+                                            text-decoration: none;
+                                            font-size: 18px;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          SHOP NOW
+                                        </center>
+                                      </v:roundrect>
+                                    <![endif]-->
+
+                                    <!--[if !mso]><!-->
+                                    <a
+                                      href="#"
+                                      class="button-a"
+                                      style="
+                                        background: #f5945c;
+                                        border: 1px solid #f5945c;
+                                        font-family: 'Nunito', Calibri,
+                                          'Trebuchet MS', Verdana, Arial,
+                                          sans-serif;
+                                        font-size: 18px;
+                                        line-height: 18px;
+                                        font-weight: 700;
+                                        text-decoration: none;
+                                        padding: 15px 55px;
+                                        color: #ffffff;
+                                        display: block;
+                                        border-radius: 10px;
+                                      "
+                                    >
+                                      SHOP NOW
+                                    </a>
+                                    <!--<![endif]-->
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- Product 3 -->
+                    <tr>
+                      <td>
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <!-- Product 3 image -->
+                            <td
+                              class="stack-column stack-column-center product-image"
+                              width="150"
+                              height="150"
+                              style="
+                                width: 150px;
+                                vertical-align: center;
+                                padding-left: 30px;
+                                font-size: 15px;
+                                font-family: sans-serif;
+                                line-height: 20px;
+                              "
+                            >
+                              <table
+                                role="presentation"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                                width="150"
+                              >
+                                <tr>
+                                  <td>
+                                    <img
+                                      src="https://knoxwong.com/wp-content/uploads/2025/10/Cosequin.png"
+                                      class="center-on-mobile"
+                                      alt="Cosequin joint health supplement"
+                                      width="150"
+                                      style="
+                                        width: 100%;
+                                        max-width: 150px;
+                                        height: auto;
+                                        display: block;
+                                      "
+                                    />
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <!-- Product 3 description -->
+                            <td
+                              class="stack-column stack-column-center product-description"
+                              width="300"
+                              style="
+                                width: 100%;
+                                max-width: 300px;
+                                padding: 0 20px 40px;
+                                vertical-align: top;
+                                text-align: center;
+                              "
+                            >
+                              <h3
+                                class="product-header"
+                                style="
+                                  font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                    Verdana, Arial, sans-serif;
+                                  font-size: 24px;
+                                  line-height: 32px;
+                                  font-weight: 700;
+                                  color: #000000;
+                                "
+                              >
+                                Cosequin Joint Health Supplement Chewable
+                                Tablets - 250 Count
+                              </h3>
+                              <p
+                                class="product-price"
+                                style="
+                                  font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                    Verdana, Arial, sans-serif;
+                                  font-size: 18px;
+                                  font-weight: 800;
+                                  color: #f60505;
+                                "
+                              >
+                                $49.99
+                              </p>
+                              <!-- Product 3 CTA -->
+                              <table
+                                align="center"
+                                role="presentation"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                                style="margin: auto"
+                                alt="Shop products CTA button"
+                              >
+                                <tr>
+                                  <td
+                                    class="button-td"
+                                    style="
+                                      border-radius: 10px;
+                                      background: #f5945c;
+                                      text-align: center;
+                                    "
+                                  >
+                                    <!--[if mso]>
+                                      <v:roundrect
+                                        xmlns:v="urn:schemas-microsoft-com:vml"
+                                        xmlns:w="urn:schemas-microsoft-com:office:word"
+                                        href="#"
+                                        style="
+                                          height: 50px;
+                                          v-text-anchor: middle;
+                                          width: 200px;
+                                        "
+                                        arcsize="16%"
+                                        strokecolor="#F5945C"
+                                        fillcolor="#F5945C"
+                                      >
+                                        <w:anchorlock />
+                                        <center
+                                          style="
+                                            background-color: #f5945c;
+                                            color: #ffffff;
+                                            font-family: 'Nunito', Calibri,
+                                              'Trebuchet MS', Verdana, Arial,
+                                              sans-serif;
+                                            text-decoration: none;
+                                            font-size: 18px;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          SHOP NOW
+                                        </center>
+                                      </v:roundrect>
+                                    <![endif]-->
+
+                                    <!--[if !mso]><!-->
+                                    <a
+                                      href="#"
+                                      class="button-a"
+                                      style="
+                                        background: #f5945c;
+                                        border: 1px solid #f5945c;
+                                        font-family: 'Nunito', Calibri,
+                                          'Trebuchet MS', Verdana, Arial,
+                                          sans-serif;
+                                        font-size: 18px;
+                                        line-height: 18px;
+                                        font-weight: 700;
+                                        text-decoration: none;
+                                        padding: 15px 55px;
+                                        color: #ffffff;
+                                        display: block;
+                                        border-radius: 10px;
+                                      "
+                                    >
+                                      SHOP NOW
+                                    </a>
+                                    <!--<![endif]-->
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Divider -->
+        <tr>
+          <td style="padding: 10px 20px">
+            <table
+              role="presentation"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              width="100%"
+            >
+              <tr>
+                <td
+                  height="1"
+                  style="
+                    font-size: 1px;
+                    line-height: 1px;
+                    background-color: #000000;
+                  "
+                >
+                  &nbsp;
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Adopt a kitten section -->
+        <tr>
+          <td style="padding: 20px 0">
+            <table
+              role="presentation"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              width="500"
+              align="center"
+              style="margin: 0 auto"
+              class="responsive-container"
+            >
+              <!-- Kitten image -->
+              <tr>
+                <td
+                  style="
+                    font-size: 15px;
+                    font-family: sans-serif;
+                    line-height: 20px;
+                  "
+                >
+                  <img
+                    src="assets/Adopt a Kitten Today.svg"
+                    alt="Adopt a kitten image"
+                    style="
+                      width: 100%;
+                      max-width: 500px;
+                      height: auto;
+                      display: block;
+                    "
+                  />
+                </td>
+              </tr>
+              <!-- Kitten description -->
+              <tr>
+                <td style="text-align: center">
+                  <p
+                    style="
+                      margin: 20px 0 30px;
+                      font-size: 16px;
+                      line-height: 32px;
+                      color: #000000;
+                      font-family: 'Nunito', Calibri, 'Trebuchet MS', Verdana,
+                        Arial, sans-serif;
+                    "
+                  >
+                    Bring endless cuddles, playful pounces, and unconditional
+                    love into your life. Browse our available kittens and
+                    complete your family. Your new tiny best friend is waiting!
+                  </p>
+                </td>
+              </tr>
+              <!-- View kittens CTA -->
+              <tr>
+                <td>
+                  <table
+                    role="presentation"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                    class="center-on-mobile"
+                    alt="View kittens CTA"
+                  >
+                    <tr>
+                      <td
+                        class="button-td"
+                        style="border-radius: 10px; background: #f5945c"
+                      >
+                        <a
+                          href="#"
+                          class="button-a"
+                          style="
+                            background: #f5945c;
+                            border: 1px solid #f5945c;
+                            font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                              Verdana, Arial, sans-serif;
+                            font-size: 16px;
+                            line-height: 16px;
+                            font-weight: 700;
+                            text-decoration: none;
+                            padding: 10px 20px;
+                            color: #ffffff;
+                            display: block;
+                            border-radius: 10px;
+                          "
+                        >
+                          VIEW KITTENS
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Blog section -->
+        <tr>
+          <td style="padding: 20px 0">
+            <table
+              role="presentation"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              width="500"
+              align="center"
+              style="margin: 0 auto"
+              class="responsive-container"
+            >
+              <tr>
+                <td style="background-color: #f7f7f5">
+                  <table
+                    role="presentation"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <!-- Blog header -->
+                    <tr>
+                      <td
+                        style="
+                          background-color: #0a145d;
+                          text-align: center;
+                          padding: 20px 0;
+                        "
+                      >
+                        <h1
+                          style="
+                            color: #ffffff;
+                            font-family: 'Akaya Kanadaka', Georgia, serif;
+                            font-size: 40px;
+                            line-height: 40px;
+                            color: #ffffff;
+                            font-weight: normal;
+                          "
+                        >
+                          Our Latest Blogs
+                        </h1>
+                      </td>
+                    </tr>
+                    <!-- Blog stories -->
+                    <tr>
+                      <td>
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <!-- Blog 1 image -->
+                            <td
+                              class="stack-column stack-column-center product-image"
+                              width="200"
+                              style="
+                                width: 200px;
+                                vertical-align: top;
+                                padding-left: 20px;
+                                padding-top: 30px;
+                                font-size: 15px;
+                                font-family: sans-serif;
+                                line-height: 20px;
+                              "
+                            >
+                              <img
+                                src="assets/Shiba_Brushing_Teeth.png"
+                                alt="Brushing shiba inu's teeth image"
+                                class="center-on-mobile"
+                                width="200"
+                                style="
+                                  width: 100%;
+                                  max-width: 200px;
+                                  height: auto;
+                                  display: block;
+                                "
+                              />
+                            </td>
+                            <td
+                              class="stack-column stack-column-center product-description"
+                              style="
+                                padding: 30px 20px 40px;
+                                vertical-align: top;
+                                text-align: center;
+                              "
+                            >
+                              <!-- Blog 1 header -->
+                              <h3
+                                style="
+                                  margin: 0 0 15px;
+                                  font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                    Verdana, Arial, sans-serif;
+                                  font-size: 24px;
+                                  line-height: 32px;
+                                  font-weight: 700;
+                                  color: #000000;
+                                "
+                              >
+                                The Doggy Dental Do's and Don'ts
+                              </h3>
+                              <!-- Blog 1 description -->
+                              <p
+                                style="
+                                  font-size: 16px;
+                                  line-height: 24px;
+                                  color: #000000;
+                                  font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                    Verdana, Arial, sans-serif;
+                                "
+                              >
+                                Don't let stinky breath be your new normal!
+                                Learn the essential tips and easy
+                                techniques—from brushing to chew toys—to keep
+                                your dog's teeth sparkling.
+                              </p>
+                              <!-- Blog 1 CTA -->
+                              <table
+                                role="presentation"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                                class="center-on-mobile"
+                                alt="Read blog CTA"
+                              >
+                                <tr>
+                                  <td
+                                    class="button-td"
+                                    style="
+                                      border-radius: 10px;
+                                      background: #f5945c;
+                                    "
+                                  >
+                                    <a
+                                      href="#"
+                                      class="button-a"
+                                      style="
+                                        background: #f5945c;
+                                        border: 1px solid #f5945c;
+                                        font-family: 'Nunito', Calibri,
+                                          'Trebuchet MS', Verdana, Arial,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        line-height: 16px;
+                                        font-weight: 700;
+                                        text-decoration: none;
+                                        padding: 10px 20px;
+                                        color: #ffffff;
+                                        display: block;
+                                        border-radius: 10px;
+                                      "
+                                    >
+                                      READ MORE
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- Blog 2 image -->
+                            <td
+                              class="stack-column stack-column-center product-image"
+                              width="200"
+                              style="
+                                width: 200px;
+                                vertical-align: top;
+                                padding-left: 20px;
+                                padding-top: 30px;
+                                font-size: 15px;
+                                font-family: sans-serif;
+                                line-height: 20px;
+                              "
+                            >
+                              <img
+                                src="assets/Corgi_Puppy_Eating.png"
+                                alt="Corgi puppy eating food image"
+                                class="center-on-mobile"
+                                width="200"
+                                style="
+                                  width: 100%;
+                                  max-width: 200px;
+                                  height: auto;
+                                  display: block;
+                                "
+                              />
+                            </td>
+                            <td
+                              class="stack-column stack-column-center product-description"
+                              style="
+                                padding: 30px 20px 40px;
+                                vertical-align: top;
+                                text-align: center;
+                              "
+                            >
+                              <!-- Blog 2 header -->
+                              <h3
+                                style="
+                                  margin: 0 0 15px;
+                                  font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                    Verdana, Arial, sans-serif;
+                                  font-size: 24px;
+                                  line-height: 32px;
+                                  font-weight: 700;
+                                  color: #000000;
+                                "
+                              >
+                                Puppy Nutrition 101: A Guide to First-Year
+                                Feeding
+                              </h3>
+                              <!-- Blog 2 description -->
+                              <p
+                                style="
+                                  font-size: 16px;
+                                  line-height: 24px;
+                                  color: #000000;
+                                  font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                    Verdana, Arial, sans-serif;
+                                "
+                              >
+                                Learn what to look for in puppy formulas, how
+                                often to feed, and the key nutrients that
+                                support rapid growth and development.
+                              </p>
+                              <!-- Blog 2 CTA -->
+                              <table
+                                role="presentation"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                                class="center-on-mobile"
+                                alt="Read blog CTA"
+                              >
+                                <tr>
+                                  <td
+                                    class="button-td"
+                                    style="
+                                      border-radius: 10px;
+                                      background: #f5945c;
+                                    "
+                                  >
+                                    <a
+                                      href="#"
+                                      class="button-a"
+                                      style="
+                                        background: #f5945c;
+                                        border: 1px solid #f5945c;
+                                        font-family: 'Nunito', Calibri,
+                                          'Trebuchet MS', Verdana, Arial,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        line-height: 16px;
+                                        font-weight: 700;
+                                        text-decoration: none;
+                                        padding: 10px 20px;
+                                        color: #ffffff;
+                                        display: block;
+                                        border-radius: 10px;
+                                      "
+                                    >
+                                      READ MORE
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Divider -->
+        <tr>
+          <td style="padding: 10px 20px">
+            <table
+              role="presentation"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              width="100%"
+            >
+              <tr>
+                <td
+                  height="1"
+                  style="
+                    font-size: 1px;
+                    line-height: 1px;
+                    background-color: #000000;
+                  "
+                >
+                  &nbsp;
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+          <td
+            style="
+              padding: 20px;
+              text-align: center;
+              font-family: 'Nunito', Calibri, 'Trebuchet MS', Verdana, Arial,
+                sans-serif;
+              font-size: 12px;
+              line-height: 15px;
+              color: #000000;
+            "
+          >
+            <table
+              role="presentation"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              width="100%"
+            >
+              <!-- Logo -->
+              <tr>
+                <td style="padding: 0px 0; text-align: center">
+                  <img
+                    src="assets/PetShop_Logo_New.svg"
+                    width="200"
+                    height="50"
+                    alt="PetShop Logo"
+                    border="0"
+                    style="
+                      width: 100%;
+                      max-width: 200px;
+                      height: auto;
+                      font-family: sans-serif;
+                      font-size: 15px;
+                      line-height: 15px;
+                      color: #555555;
+                    "
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p>@ All Rights Reserved</p>
+                </td>
+              </tr>
+              <!-- Social icons -->
+              <tr>
+                <td>
+                  <table
+                    role="presentation"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    align="center"
+                    style="margin: 0 auto"
+                  >
+                    <tr>
+                      <td style="padding: 10px 5px">
+                        <a href="https://www.facebook.com/"
+                          ><img
+                            src="assets/Facebook_Color_Icon.png"
+                            width="25"
+                            height="25"
+                            alt="Facebook icon"
+                            style="
+                              border-radius: 5px;
+                              width: 25px;
+                              height: 25px;
+                              display: block;
+                            "
+                        /></a>
+                      </td>
+                      <td style="padding: 10px 5px">
+                        <a href="https://www.instagram.com/"
+                          ><img
+                            src="assets/Instagram_Color_Icon.png"
+                            width="25"
+                            height="25"
+                            alt="Instagram icon"
+                            style="width: 25px; height: 25px; display: block"
+                        /></a>
+                      </td>
+                      <td style="padding: 10px 5px">
+                        <a href="https://x.com/"
+                          ><img
+                            src="assets/X_Square_Icon.png"
+                            width="25"
+                            height="25"
+                            alt="Facebook icon"
+                            style="width: 25px; height: 25px; display: block"
+                        /></a>
+                      </td>
+                      <td style="padding: 10px 5px">
+                        <a href="https://www.pinterest.com/"
+                          ><img
+                            src="assets/Pinterest_Color_Logo.png"
+                            width="25"
+                            height="25"
+                            alt="Facebook icon"
+                            style="width: 25px; height: 25px; display: block"
+                        /></a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- Address -->
+              <tr>
+                <td>
+                  <p>Pet Shop, 7-11 Commercial Ct, Belfast Bt1 2NB</p>
+                </td>
+              </tr>
+              <!-- Unsubscribe/View in Browser -->
+              <tr>
+                <td>
+                  <table
+                    role="presentation"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <tr>
+                      <td style="text-align: center; padding: 10px">
+                        <a
+                          href="#"
+                          style="color: #888888; text-decoration: none"
+                          >Unsubscribe</a
+                        >
+                        <span style="color: #888888">&nbsp;|&nbsp;</span>
+                        <a
+                          href="#"
+                          style="color: #888888; text-decoration: none"
+                          >View in Browser</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
     </center>
   </body>
 </html>
