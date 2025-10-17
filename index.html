@@ -101,6 +101,26 @@
         .product-price {
           color: #f60505 !important;
         }
+        .blog-bg {
+          background-color: #3a3a3a !important;
+        }
+        .blog-main-header-bg {
+          background-color: #0a145d !important;
+          color: #ffffff !important;
+        }
+        .blog-main-header {
+          color: #ffffff !important;
+        }
+        .blog-header {
+          color: #ffffff !important;
+        }
+        .blog-paragraph {
+          color: #ffffff !important;
+        }
+        .footer {
+          color: #ffffff !important;
+          background-color: #3a3a3a !important;
+        }
       }
       [data-ogsc] .hero-header {
         color: #ffffff !important;
@@ -119,6 +139,26 @@
       }
       [data-ogsc] .product-price {
         color: #f60505 !important;
+      }
+      [data-ogsc] .blog-bg {
+        background-color: #3a3a3a !important;
+      }
+      [data-ogsc] .blog-main-header-bg {
+        background-color: #0a145d !important;
+        color: #ffffff !important;
+      }
+      [data-ogsc] .blog-main-header {
+        color: #ffffff !important;
+      }
+      [data-ogsc] .blog-header {
+        color: #ffffff !important;
+      }
+      [data-ogsc] .blog-paragraph {
+        color: #ffffff !important;
+      }
+      [data-ogsc] .footer {
+        color: #ffffff !important;
+        background-color: #3a3a3a !important;
       }
       @media screen and (max-width: 600px) {
         .email-container {
@@ -153,8 +193,11 @@
         .product-image {
           padding-left: 0 !important;
         }
+        .blog-image {
+          padding-left: 0 !important;
+        }
         .product-description {
-          padding: 20px 10px 20px !important;
+          padding: 10px 0 20px !important;
         }
         .responsive-container {
           width: 100% !important;
@@ -164,6 +207,18 @@
         }
         .nav-bar-category {
           font-size: 14px !important;
+        }
+        .responsive-kitten-image {
+          width: 100% !important;
+        }
+        .kitten-paragraph {
+          padding: 20px 10px !important;
+        }
+        .blog-main-header {
+          font-size: 32px !important;
+        }
+        .blog-description {
+          padding: 20px 0px 20px !important;
         }
       }
     </style>
@@ -247,7 +302,7 @@
               src="https://knoxwong.com/wp-content/uploads/2025/10/PetShop_Logo.png"
               width="200"
               height="100"
-              alt="PetShop Logo"
+              alt="PetShop header logo"
               border="0"
               style="
                 width: 100%;
@@ -583,6 +638,7 @@
                     background-color: #f7f7f5;
                     color: #000000;
                     border-radius: 10px;
+                    padding: 0 5px;
                   "
                 >
                   <table
@@ -1136,7 +1192,7 @@
         </tr>
         <!-- Divider -->
         <tr>
-          <td style="padding: 10px 20px">
+          <td style="padding: 10px 20px; background-color: #ffffff">
             <table
               role="presentation"
               border="0"
@@ -1161,93 +1217,168 @@
         </tr>
         <!-- Adopt a kitten section -->
         <tr>
-          <td style="padding: 20px 0">
+          <td align="center" style="padding: 20px 0; background-color: #ffffff">
             <table
               role="presentation"
               border="0"
               cellpadding="0"
               cellspacing="0"
-              width="500"
+              width="100%"
               align="center"
               style="margin: 0 auto"
               class="responsive-container"
             >
               <!-- Kitten image -->
               <tr>
-                <td
-                  style="
-                    font-size: 15px;
-                    font-family: sans-serif;
-                    line-height: 20px;
-                  "
-                >
-                  <img
-                    src="assets/Adopt a Kitten Today.svg"
-                    alt="Adopt a kitten image"
-                    style="
-                      width: 100%;
-                      max-width: 500px;
-                      height: auto;
-                      display: block;
-                    "
-                  />
+                <td>
+                  <table
+                    role="presentation"
+                    cellpadding="0"
+                    cellspacing="0"
+                    border="0"
+                    width="600"
+                    style="width: 600px"
+                    align="center"
+                    class="responsive-kitten-image"
+                  >
+                    <tr>
+                      <td>
+                        <img
+                          src="https://knoxwong.com/wp-content/uploads/2025/10/Adopt-a-Kitten-Today.png"
+                          alt="Adopt a kitten image"
+                          width="600"
+                          height="367"
+                          style="
+                            width: 100%;
+                            max-width: 600px;
+                            height: auto;
+                            display: block;
+                            font-size: 15px;
+                            font-family: sans-serif;
+                            line-height: 20px;
+                          "
+                        />
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
               <!-- Kitten description -->
               <tr>
-                <td style="text-align: center">
-                  <p
-                    style="
-                      margin: 20px 0 30px;
-                      font-size: 16px;
-                      line-height: 32px;
-                      color: #000000;
-                      font-family: 'Nunito', Calibri, 'Trebuchet MS', Verdana,
-                        Arial, sans-serif;
-                    "
-                  >
-                    Bring endless cuddles, playful pounces, and unconditional
-                    love into your life. Browse our available kittens and
-                    complete your family. Your new tiny best friend is waiting!
-                  </p>
-                </td>
-              </tr>
-              <!-- View kittens CTA -->
-              <tr>
                 <td>
                   <table
                     role="presentation"
-                    cellspacing="0"
                     cellpadding="0"
+                    cellspacing="0"
                     border="0"
-                    class="center-on-mobile"
-                    alt="View kittens CTA"
+                    width="100%"
                   >
                     <tr>
                       <td
-                        class="button-td"
-                        style="border-radius: 10px; background: #f5945c"
+                        class="kitten-paragraph"
+                        style="text-align: center; padding: 20px 20px 30px"
                       >
-                        <a
-                          href="#"
-                          class="button-a"
-                          style="
-                            background: #f5945c;
-                            border: 1px solid #f5945c;
-                            font-family: 'Nunito', Calibri, 'Trebuchet MS',
-                              Verdana, Arial, sans-serif;
-                            font-size: 16px;
-                            line-height: 16px;
-                            font-weight: 700;
-                            text-decoration: none;
-                            padding: 10px 20px;
-                            color: #ffffff;
-                            display: block;
-                            border-radius: 10px;
-                          "
+                        <table
+                          role="presentation"
+                          cellpadding="0"
+                          cellspacing="0"
+                          border="0"
+                          width="100%"
                         >
-                          VIEW KITTENS
-                        </a>
+                          <tr>
+                            <td style="padding-bottom: 20px">
+                              <p
+                                style="
+                                  font-size: 18px;
+                                  line-height: 32px;
+                                  color: #000000;
+                                  font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                    Verdana, Arial, sans-serif;
+                                "
+                              >
+                                Bring endless cuddles, playful pounces, and
+                                unconditional love into your life. Browse our
+                                available kittens and complete your family. Your
+                                new tiny best friend is waiting!
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- View kittens CTA -->
+                        <table
+                          align="center"
+                          role="presentation"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                          style="margin: auto"
+                          alt="View kittens CTA button"
+                        >
+                          <tr>
+                            <td
+                              class="button-td"
+                              style="
+                                border-radius: 10px;
+                                background: #f5945c;
+                                text-align: center;
+                              "
+                            >
+                              <!--[if mso]>
+                                <v:roundrect
+                                  xmlns:v="urn:schemas-microsoft-com:vml"
+                                  xmlns:w="urn:schemas-microsoft-com:office:word"
+                                  href="#"
+                                  style="
+                                    height: 50px;
+                                    v-text-anchor: middle;
+                                    width: 200px;
+                                  "
+                                  arcsize="16%"
+                                  strokecolor="#F5945C"
+                                  fillcolor="#F5945C"
+                                >
+                                  <w:anchorlock />
+                                  <center
+                                    style="
+                                      background-color: #f5945c;
+                                      color: #ffffff;
+                                      font-family: 'Nunito', Calibri,
+                                        'Trebuchet MS', Verdana, Arial,
+                                        sans-serif;
+                                      text-decoration: none;
+                                      font-size: 18px;
+                                      font-weight: 700;
+                                    "
+                                  >
+                                    VIEW KITTENS
+                                  </center>
+                                </v:roundrect>
+                              <![endif]-->
+                              <!--[if !mso]><!-->
+                              <a
+                                href="#"
+                                class="button-a"
+                                style="
+                                  background: #f5945c;
+                                  border: 1px solid #f5945c;
+                                  font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                                    Verdana, Arial, sans-serif;
+                                  font-size: 18px;
+                                  line-height: 18px;
+                                  font-weight: 700;
+                                  text-decoration: none;
+                                  padding: 15px 55px;
+                                  color: #ffffff;
+                                  display: block;
+                                  border-radius: 10px;
+                                "
+                              >
+                                VIEW KITTENS
+                              </a>
+                              <!--<![endif]-->
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
@@ -1258,7 +1389,7 @@
         </tr>
         <!-- Blog section -->
         <tr>
-          <td style="padding: 20px 0">
+          <td style="background-color: #ffffff; padding-bottom: 20px">
             <table
               role="presentation"
               border="0"
@@ -1270,7 +1401,11 @@
               class="responsive-container"
             >
               <tr>
-                <td style="background-color: #f7f7f5">
+                <td
+                  class="blog-bg"
+                  style="background-color: #f7f7f5; padding: 0 5px"
+                >
+                  <!-- Blog main header -->
                   <table
                     role="presentation"
                     border="0"
@@ -1278,16 +1413,18 @@
                     cellspacing="0"
                     width="100%"
                   >
-                    <!-- Blog header -->
                     <tr>
                       <td
+                        class="blog-main-header-bg"
                         style="
                           background-color: #0a145d;
+                          color: #ffffff;
                           text-align: center;
                           padding: 20px 0;
                         "
                       >
                         <h1
+                          class="blog-main-header"
                           style="
                             color: #ffffff;
                             font-family: 'Akaya Kanadaka', Georgia, serif;
@@ -1301,9 +1438,18 @@
                         </h1>
                       </td>
                     </tr>
-                    <!-- Blog stories -->
+                  </table>
+                  <!-- Blog stories -->
+                  <table
+                    role="presentation"
+                    cellpadding="0"
+                    cellspacing="0"
+                    border="0"
+                    align="center"
+                    style="margin: 0 auto; width: 100%; max-width: 500px"
+                  >
                     <tr>
-                      <td>
+                      <td style="padding: 10px 0">
                         <table
                           role="presentation"
                           border="0"
@@ -1314,34 +1460,51 @@
                           <tr>
                             <!-- Blog 1 image -->
                             <td
-                              class="stack-column stack-column-center product-image"
+                              class="stack-column stack-column-center blog-image"
                               width="200"
+                              height="200"
                               style="
                                 width: 200px;
-                                vertical-align: top;
+                                vertical-align: center;
                                 padding-left: 20px;
-                                padding-top: 30px;
                                 font-size: 15px;
                                 font-family: sans-serif;
                                 line-height: 20px;
                               "
                             >
-                              <img
-                                src="assets/Shiba_Brushing_Teeth.png"
-                                alt="Brushing shiba inu's teeth image"
-                                class="center-on-mobile"
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
                                 width="200"
-                                style="
-                                  width: 100%;
-                                  max-width: 200px;
-                                  height: auto;
-                                  display: block;
-                                "
-                              />
+                              >
+                                <tr>
+                                  <td>
+                                    <img
+                                      src="https://knoxwong.com/wp-content/uploads/2025/10/Shiba_Brushing_Teeth.png"
+                                      alt="Brushing shiba inu's teeth image"
+                                      class="center-on-mobile"
+                                      width="200"
+                                      style="
+                                        width: 100%;
+                                        max-width: 200px;
+                                        height: auto;
+                                        display: block;
+                                        margin: 0 auto;
+                                      "
+                                    />
+                                  </td>
+                                </tr>
+                              </table>
                             </td>
+                            <!-- Blog 1 text -->
                             <td
-                              class="stack-column stack-column-center product-description"
+                              class="stack-column stack-column-center blog-description"
+                              width="300"
                               style="
+                                width: 100%;
+                                max-width: 300px;
                                 padding: 30px 20px 40px;
                                 vertical-align: top;
                                 text-align: center;
@@ -1349,8 +1512,8 @@
                             >
                               <!-- Blog 1 header -->
                               <h3
+                                class="blog-header"
                                 style="
-                                  margin: 0 0 15px;
                                   font-family: 'Nunito', Calibri, 'Trebuchet MS',
                                     Verdana, Arial, sans-serif;
                                   font-size: 24px;
@@ -1363,12 +1526,14 @@
                               </h3>
                               <!-- Blog 1 description -->
                               <p
+                                class="blog-paragraph"
                                 style="
                                   font-size: 16px;
                                   line-height: 24px;
                                   color: #000000;
                                   font-family: 'Nunito', Calibri, 'Trebuchet MS',
                                     Verdana, Arial, sans-serif;
+                                  padding-bottom: 5px;
                                 "
                               >
                                 Don't let stinky breath be your new normal!
@@ -1378,12 +1543,13 @@
                               </p>
                               <!-- Blog 1 CTA -->
                               <table
+                                align="center"
                                 role="presentation"
                                 cellspacing="0"
                                 cellpadding="0"
                                 border="0"
-                                class="center-on-mobile"
-                                alt="Read blog CTA"
+                                style="margin: auto"
+                                alt="Read more CTA button"
                               >
                                 <tr>
                                   <td
@@ -1391,8 +1557,41 @@
                                     style="
                                       border-radius: 10px;
                                       background: #f5945c;
+                                      text-align: center;
                                     "
                                   >
+                                    <!--[if mso]>
+                                      <v:roundrect
+                                        xmlns:v="urn:schemas-microsoft-com:vml"
+                                        xmlns:w="urn:schemas-microsoft-com:office:word"
+                                        href="#"
+                                        style="
+                                          height: 50px;
+                                          v-text-anchor: middle;
+                                          width: 200px;
+                                        "
+                                        arcsize="16%"
+                                        strokecolor="#F5945C"
+                                        fillcolor="#F5945C"
+                                      >
+                                        <w:anchorlock />
+                                        <center
+                                          style="
+                                            background-color: #f5945c;
+                                            color: #ffffff;
+                                            font-family: 'Nunito', Calibri,
+                                              'Trebuchet MS', Verdana, Arial,
+                                              sans-serif;
+                                            text-decoration: none;
+                                            font-size: 18px;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          READ MORE
+                                        </center>
+                                      </v:roundrect>
+                                    <![endif]-->
+                                    <!--[if !mso]><!-->
                                     <a
                                       href="#"
                                       class="button-a"
@@ -1402,11 +1601,11 @@
                                         font-family: 'Nunito', Calibri,
                                           'Trebuchet MS', Verdana, Arial,
                                           sans-serif;
-                                        font-size: 16px;
-                                        line-height: 16px;
+                                        font-size: 18px;
+                                        line-height: 18px;
                                         font-weight: 700;
                                         text-decoration: none;
-                                        padding: 10px 20px;
+                                        padding: 15px 55px;
                                         color: #ffffff;
                                         display: block;
                                         border-radius: 10px;
@@ -1414,42 +1613,81 @@
                                     >
                                       READ MORE
                                     </a>
+                                    <!--<![endif]-->
                                   </td>
                                 </tr>
                               </table>
                             </td>
                           </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table
+                    role="presentation"
+                    cellpadding="0"
+                    cellspacing="0"
+                    border="0"
+                    align="center"
+                    style="margin: 0 auto; width: 100%; max-width: 500px"
+                  >
+                    <tr>
+                      <td style="padding: 10px 0">
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                        >
                           <tr>
                             <!-- Blog 2 image -->
                             <td
-                              class="stack-column stack-column-center product-image"
+                              class="stack-column stack-column-center blog-image"
                               width="200"
+                              height="200"
                               style="
                                 width: 200px;
-                                vertical-align: top;
+                                vertical-align: center;
                                 padding-left: 20px;
-                                padding-top: 30px;
                                 font-size: 15px;
                                 font-family: sans-serif;
                                 line-height: 20px;
                               "
                             >
-                              <img
-                                src="assets/Corgi_Puppy_Eating.png"
-                                alt="Corgi puppy eating food image"
-                                class="center-on-mobile"
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
                                 width="200"
-                                style="
-                                  width: 100%;
-                                  max-width: 200px;
-                                  height: auto;
-                                  display: block;
-                                "
-                              />
+                              >
+                                <tr>
+                                  <td>
+                                    <img
+                                      src="https://knoxwong.com/wp-content/uploads/2025/10/Corgi_Puppy_Eating.png"
+                                      alt="Corgi puppy eating food image"
+                                      class="center-on-mobile"
+                                      width="200"
+                                      style="
+                                        width: 100%;
+                                        max-width: 200px;
+                                        height: auto;
+                                        display: block;
+                                        margin: 0 auto;
+                                      "
+                                    />
+                                  </td>
+                                </tr>
+                              </table>
                             </td>
+                            <!-- Blog 2 text -->
                             <td
-                              class="stack-column stack-column-center product-description"
+                              class="stack-column stack-column-center blog-description"
+                              width="300"
                               style="
+                                width: 100%;
+                                max-width: 300px;
                                 padding: 30px 20px 40px;
                                 vertical-align: top;
                                 text-align: center;
@@ -1457,8 +1695,8 @@
                             >
                               <!-- Blog 2 header -->
                               <h3
+                                class="blog-header"
                                 style="
-                                  margin: 0 0 15px;
                                   font-family: 'Nunito', Calibri, 'Trebuchet MS',
                                     Verdana, Arial, sans-serif;
                                   font-size: 24px;
@@ -1472,12 +1710,14 @@
                               </h3>
                               <!-- Blog 2 description -->
                               <p
+                                class="blog-paragraph"
                                 style="
                                   font-size: 16px;
                                   line-height: 24px;
                                   color: #000000;
                                   font-family: 'Nunito', Calibri, 'Trebuchet MS',
                                     Verdana, Arial, sans-serif;
+                                  padding-bottom: 5px;
                                 "
                               >
                                 Learn what to look for in puppy formulas, how
@@ -1486,12 +1726,13 @@
                               </p>
                               <!-- Blog 2 CTA -->
                               <table
+                                align="center"
                                 role="presentation"
                                 cellspacing="0"
                                 cellpadding="0"
                                 border="0"
-                                class="center-on-mobile"
-                                alt="Read blog CTA"
+                                style="margin: auto"
+                                alt="Read more CTA button"
                               >
                                 <tr>
                                   <td
@@ -1499,8 +1740,41 @@
                                     style="
                                       border-radius: 10px;
                                       background: #f5945c;
+                                      text-align: center;
                                     "
                                   >
+                                    <!--[if mso]>
+                                      <v:roundrect
+                                        xmlns:v="urn:schemas-microsoft-com:vml"
+                                        xmlns:w="urn:schemas-microsoft-com:office:word"
+                                        href="#"
+                                        style="
+                                          height: 50px;
+                                          v-text-anchor: middle;
+                                          width: 200px;
+                                        "
+                                        arcsize="16%"
+                                        strokecolor="#F5945C"
+                                        fillcolor="#F5945C"
+                                      >
+                                        <w:anchorlock />
+                                        <center
+                                          style="
+                                            background-color: #f5945c;
+                                            color: #ffffff;
+                                            font-family: 'Nunito', Calibri,
+                                              'Trebuchet MS', Verdana, Arial,
+                                              sans-serif;
+                                            text-decoration: none;
+                                            font-size: 18px;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          READ MORE
+                                        </center>
+                                      </v:roundrect>
+                                    <![endif]-->
+                                    <!--[if !mso]><!-->
                                     <a
                                       href="#"
                                       class="button-a"
@@ -1510,11 +1784,11 @@
                                         font-family: 'Nunito', Calibri,
                                           'Trebuchet MS', Verdana, Arial,
                                           sans-serif;
-                                        font-size: 16px;
-                                        line-height: 16px;
+                                        font-size: 18px;
+                                        line-height: 18px;
                                         font-weight: 700;
                                         text-decoration: none;
-                                        padding: 10px 20px;
+                                        padding: 15px 55px;
                                         color: #ffffff;
                                         display: block;
                                         border-radius: 10px;
@@ -1522,6 +1796,7 @@
                                     >
                                       READ MORE
                                     </a>
+                                    <!--<![endif]-->
                                   </td>
                                 </tr>
                               </table>
@@ -1539,7 +1814,7 @@
 
         <!-- Divider -->
         <tr>
-          <td style="padding: 10px 20px">
+          <td style="padding: 10px 20px; background-color: #ffffff">
             <table
               role="presentation"
               border="0"
@@ -1565,12 +1840,14 @@
         <!-- Footer -->
         <tr>
           <td
+            class="footer"
             style="
+              background-color: #ffffff;
               padding: 20px;
               text-align: center;
               font-family: 'Nunito', Calibri, 'Trebuchet MS', Verdana, Arial,
                 sans-serif;
-              font-size: 12px;
+              font-size: 14px;
               line-height: 15px;
               color: #000000;
             "
@@ -1586,10 +1863,10 @@
               <tr>
                 <td style="padding: 0px 0; text-align: center">
                   <img
-                    src="assets/PetShop_Logo_New.svg"
+                    src="https://knoxwong.com/wp-content/uploads/2025/10/PetShop_Logo.png"
                     width="200"
                     height="50"
-                    alt="PetShop Logo"
+                    alt="PetShop footer logo"
                     border="0"
                     style="
                       width: 100%;
@@ -1603,15 +1880,17 @@
                   />
                 </td>
               </tr>
-
+              <!-- Copyright -->
               <tr>
-                <td>
-                  <p>@ All Rights Reserved</p>
+                <td style="padding: 5px 0">
+                  <p style="color: #000000; text-align: center">
+                    @ All Rights Reserved
+                  </p>
                 </td>
               </tr>
               <!-- Social icons -->
               <tr>
-                <td>
+                <td align="center">
                   <table
                     role="presentation"
                     border="0"
@@ -1624,14 +1903,14 @@
                       <td style="padding: 10px 5px">
                         <a href="https://www.facebook.com/"
                           ><img
-                            src="assets/Facebook_Color_Icon.png"
-                            width="25"
-                            height="25"
+                            src="https://knoxwong.com/wp-content/uploads/2025/10/Facebook_Color_Icon.png"
+                            width="40"
+                            height="40"
                             alt="Facebook icon"
                             style="
                               border-radius: 5px;
-                              width: 25px;
-                              height: 25px;
+                              width: 40px;
+                              height: 40px;
                               display: block;
                             "
                         /></a>
@@ -1639,31 +1918,31 @@
                       <td style="padding: 10px 5px">
                         <a href="https://www.instagram.com/"
                           ><img
-                            src="assets/Instagram_Color_Icon.png"
-                            width="25"
-                            height="25"
+                            src="https://knoxwong.com/wp-content/uploads/2025/10/Instagram_Color_Icon.png"
+                            width="40"
+                            height="40"
                             alt="Instagram icon"
-                            style="width: 25px; height: 25px; display: block"
+                            style="width: 40px; height: 40px; display: block"
                         /></a>
                       </td>
                       <td style="padding: 10px 5px">
                         <a href="https://x.com/"
                           ><img
-                            src="assets/X_Square_Icon.png"
-                            width="25"
-                            height="25"
-                            alt="Facebook icon"
-                            style="width: 25px; height: 25px; display: block"
+                            src="https://knoxwong.com/wp-content/uploads/2025/10/X_Square_Icon.png"
+                            width="40"
+                            height="40"
+                            alt="X icon"
+                            style="width: 40px; height: 40px; display: block"
                         /></a>
                       </td>
                       <td style="padding: 10px 5px">
                         <a href="https://www.pinterest.com/"
                           ><img
-                            src="assets/Pinterest_Color_Logo.png"
-                            width="25"
-                            height="25"
-                            alt="Facebook icon"
-                            style="width: 25px; height: 25px; display: block"
+                            src="https://knoxwong.com/wp-content/uploads/2025/10/Pinterest_Color_Logo.png"
+                            width="40"
+                            height="40"
+                            alt="Pinterest icon"
+                            style="width: 40px; height: 40px; display: block"
                         /></a>
                       </td>
                     </tr>
@@ -1672,8 +1951,10 @@
               </tr>
               <!-- Address -->
               <tr>
-                <td>
-                  <p>Pet Shop, 7-11 Commercial Ct, Belfast Bt1 2NB</p>
+                <td align="center" style="padding: 5px 0">
+                  <p style="color: #000000; text-align: center">
+                    Pet Shop, 7-11 Commercial Ct, Belfast Bt1 2NB
+                  </p>
                 </td>
               </tr>
               <!-- Unsubscribe/View in Browser -->
@@ -1687,16 +1968,19 @@
                     width="100%"
                   >
                     <tr>
-                      <td style="text-align: center; padding: 10px">
+                      <td
+                        align="center"
+                        style="text-align: center; padding: 10px 0"
+                      >
                         <a
                           href="#"
-                          style="color: #888888; text-decoration: none"
+                          style="color: #888888; text-decoration: underline"
                           >Unsubscribe</a
                         >
                         <span style="color: #888888">&nbsp;|&nbsp;</span>
                         <a
                           href="#"
-                          style="color: #888888; text-decoration: none"
+                          style="color: #888888; text-decoration: underline"
                           >View in Browser</a
                         >
                       </td>
