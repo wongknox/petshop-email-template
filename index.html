@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="color-scheme" content="light dark" />
     <meta name="supported-color-schemes" content="light dark" />
-    <title>PetShop</title>
+    <title>Pet Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -71,22 +71,37 @@
       a {
         text-decoration: none;
       }
+      .nav-bar-category {
+        white-space: nowrap;
+      }
 
-      .button-td,
-      .button-a {
-        transition: all 100ms ease-in;
-      }
-      .button-td:hover,
-      .button-a:hover {
-        background: #555555 !important;
-        border-color: #555555 !important;
-      }
       @media (prefers-color-scheme: dark) {
+        .body-bg {
+          background-color: #000000 !important;
+        }
+        .logo-bg {
+          background-color: #3a3a3a !important;
+        }
+        .nav-bar-bg {
+          background-color: #3a3a3a !important;
+          color: #ffffff !important;
+        }
+        .nav-bar-category {
+          color: #ffffff !important;
+        }
         .hero-header {
           color: #ffffff !important;
         }
         .hero-paragraph {
           color: #ffffff !important;
+        }
+        .hero-button-a {
+          background: #ffffff !important;
+          border: 1px solid #ffffff;
+          color: #000000 !important;
+        }
+        .banner-bg {
+          background-color: #3a3a3a !important;
         }
         .product-bg {
           background-color: #3a3a3a !important;
@@ -100,6 +115,13 @@
         }
         .product-price {
           color: #f60505 !important;
+        }
+        .kitten-bg {
+          background-color: #3a3a3a !important;
+          color: #ffffff !important;
+        }
+        .kitten-paragraph {
+          color: #ffffff !important;
         }
         .blog-bg {
           background-color: #3a3a3a !important;
@@ -121,12 +143,42 @@
           color: #ffffff !important;
           background-color: #3a3a3a !important;
         }
+        .footer-text {
+          color: #ffffff !important;
+        }
+        .divider-bg {
+          background-color: #3a3a3a !important;
+        }
+        .divider-line {
+          color: #ffffff !important;
+        }
+      }
+      [data-ogsc] .body-bg {
+        background-color: #000000 !important;
+      }
+      [data-ogsc] .logo-bg {
+        background-color: #3a3a3a !important;
+      }
+      [data-ogsc] .nav-bar-bg {
+        background-color: #3a3a3a !important;
+        color: #ffffff !important;
+      }
+      [data-ogsc] .nav-bar-category {
+        color: #ffffff !important;
       }
       [data-ogsc] .hero-header {
         color: #ffffff !important;
       }
       [data-ogsc] .hero-paragraph {
         color: #ffffff !important;
+      }
+      [data-ogsc] .hero-button-a {
+        background: #ffffff !important;
+        border: 1px solid #ffffff;
+        color: #000000 !important;
+      }
+      [data-ogsc] .banner-bg {
+        background-color: #3a3a3a !important;
       }
       [data-ogsc] .product-bg {
         background-color: #3a3a3a !important;
@@ -139,6 +191,13 @@
       }
       [data-ogsc] .product-price {
         color: #f60505 !important;
+      }
+      [data-ogsc] .kitten-bg {
+        background-color: #3a3a3a !important;
+        color: #ffffff !important;
+      }
+      [data-ogsc] .kitten-paragraph {
+        color: #ffffff !important;
       }
       [data-ogsc] .blog-bg {
         background-color: #3a3a3a !important;
@@ -160,10 +219,22 @@
         color: #ffffff !important;
         background-color: #3a3a3a !important;
       }
+      [data-ogsc] .footer-text {
+        color: #ffffff !important;
+      }
+      [data-ogsc] .divider-bg {
+        background-color: #3a3a3a !important;
+      }
+      [data-ogsc] .divider-line {
+        color: #ffffff !important;
+      }
       @media screen and (max-width: 600px) {
         .email-container {
           width: 100% !important;
           margin: auto !important;
+        }
+        .nav-bar {
+          padding: 0 15px 0 0 !important;
         }
         .hero-text {
           padding: 10px 40px 10px !important;
@@ -211,7 +282,7 @@
         .responsive-kitten-image {
           width: 100% !important;
         }
-        .kitten-paragraph {
+        .kitten-text {
           padding: 20px 10px !important;
         }
         .blog-main-header {
@@ -252,6 +323,7 @@
     <![endif]-->
   </head>
   <body
+    class="body-bg"
     width="100%"
     style="
       margin: 0;
@@ -292,6 +364,8 @@
         <!-- Logo -->
         <tr>
           <td
+            align="center"
+            class="logo-bg"
             style="
               padding: 15px 0;
               text-align: center;
@@ -301,7 +375,6 @@
             <img
               src="https://knoxwong.com/wp-content/uploads/2025/10/PetShop_Logo.png"
               width="200"
-              height="100"
               alt="PetShop header logo"
               border="0"
               style="
@@ -334,7 +407,10 @@
             >
               <!-- Navigation bar -->
               <tr>
-                <td style="background-color: #ffffff; padding-bottom: 10px">
+                <td
+                  class="nav-bar-bg"
+                  style="background-color: #ffffff; padding-bottom: 10px"
+                >
                   <table
                     role="presentation"
                     cellpadding="0"
@@ -528,9 +604,10 @@
                       <td
                         class="button-td"
                         style="
-                          border-radius: 10px;
-                          background: #ffffff;
                           text-align: center;
+                          border-radius: 5px;
+                          padding: 10px 55px;
+                          background: #ffffff;
                         "
                       >
                         <!--[if mso]>
@@ -541,9 +618,9 @@
                             style="
                               height: 50px;
                               v-text-anchor: middle;
-                              width: 200px;
+                              width: 170px;
                             "
-                            arcsize="16%"
+                            arcsize="10%"
                             strokecolor="#ffffff"
                             fillcolor="#ffffff"
                           >
@@ -567,20 +644,17 @@
                         <!--[if !mso]><!-->
                         <a
                           href="#"
-                          class="button-a"
+                          class="button-a hero-button-a"
                           style="
                             background: #ffffff;
-                            border: 1px solid #ffffff;
                             font-family: 'Nunito', Calibri, 'Trebuchet MS',
                               Verdana, Arial, sans-serif;
                             font-size: 18px;
-                            line-height: 18px;
                             font-weight: 700;
                             text-decoration: none;
-                            padding: 15px 55px;
                             color: #000000;
                             display: block;
-                            border-radius: 10px;
+                            border-radius: 5px;
                           "
                         >
                           SHOP NOW
@@ -597,13 +671,16 @@
         <!-- End of hero section -->
         <!-- Free shipping banner -->
         <tr>
-          <td align="center" style="background-color: #ffffff; padding: 20px 0">
+          <td
+            class="banner-bg"
+            align="center"
+            style="background-color: #ffffff; padding-top: 20px"
+          >
             <a href="#">
               <img
                 src="https://knoxwong.com/wp-content/uploads/2025/10/Free_Shipping.png"
                 alt="Free shipping on orders over $49 banner"
                 width="500"
-                height="115"
                 style="
                   font-family: sans-serif;
                   font-size: 15px;
@@ -775,9 +852,10 @@
                                   <td
                                     class="button-td"
                                     style="
-                                      border-radius: 10px;
-                                      background: #f5945c;
                                       text-align: center;
+                                      background: #f5945c;
+                                      border-radius: 5px;
+                                      padding: 10px 55px;
                                     "
                                   >
                                     <!--[if mso]>
@@ -788,9 +866,9 @@
                                         style="
                                           height: 50px;
                                           v-text-anchor: middle;
-                                          width: 200px;
+                                          width: 170px;
                                         "
-                                        arcsize="16%"
+                                        arcsize="10%"
                                         strokecolor="#F5945C"
                                         fillcolor="#F5945C"
                                       >
@@ -818,18 +896,15 @@
                                       class="button-a"
                                       style="
                                         background: #f5945c;
-                                        border: 1px solid #f5945c;
+                                        border-radius: 5px;
                                         font-family: 'Nunito', Calibri,
                                           'Trebuchet MS', Verdana, Arial,
                                           sans-serif;
                                         font-size: 18px;
-                                        line-height: 18px;
                                         font-weight: 700;
                                         text-decoration: none;
-                                        padding: 15px 55px;
                                         color: #ffffff;
                                         display: block;
-                                        border-radius: 10px;
                                       "
                                     >
                                       SHOP NOW
@@ -945,9 +1020,10 @@
                                   <td
                                     class="button-td"
                                     style="
-                                      border-radius: 10px;
-                                      background: #f5945c;
                                       text-align: center;
+                                      background: #f5945c;
+                                      border-radius: 5px;
+                                      padding: 10px 55px;
                                     "
                                   >
                                     <!--[if mso]>
@@ -958,9 +1034,9 @@
                                         style="
                                           height: 50px;
                                           v-text-anchor: middle;
-                                          width: 200px;
+                                          width: 170px;
                                         "
-                                        arcsize="16%"
+                                        arcsize="10%"
                                         strokecolor="#F5945C"
                                         fillcolor="#F5945C"
                                       >
@@ -988,18 +1064,15 @@
                                       class="button-a"
                                       style="
                                         background: #f5945c;
-                                        border: 1px solid #f5945c;
+                                        border-radius: 5px;
                                         font-family: 'Nunito', Calibri,
                                           'Trebuchet MS', Verdana, Arial,
                                           sans-serif;
                                         font-size: 18px;
-                                        line-height: 18px;
                                         font-weight: 700;
                                         text-decoration: none;
-                                        padding: 15px 55px;
                                         color: #ffffff;
                                         display: block;
-                                        border-radius: 10px;
                                       "
                                     >
                                       SHOP NOW
@@ -1116,9 +1189,10 @@
                                   <td
                                     class="button-td"
                                     style="
-                                      border-radius: 10px;
-                                      background: #f5945c;
                                       text-align: center;
+                                      background: #f5945c;
+                                      border-radius: 5px;
+                                      padding: 10px 55px;
                                     "
                                   >
                                     <!--[if mso]>
@@ -1129,9 +1203,9 @@
                                         style="
                                           height: 50px;
                                           v-text-anchor: middle;
-                                          width: 200px;
+                                          width: 170px;
                                         "
-                                        arcsize="16%"
+                                        arcsize="10%"
                                         strokecolor="#F5945C"
                                         fillcolor="#F5945C"
                                       >
@@ -1159,18 +1233,15 @@
                                       class="button-a"
                                       style="
                                         background: #f5945c;
-                                        border: 1px solid #f5945c;
+                                        border-radius: 5px;
                                         font-family: 'Nunito', Calibri,
                                           'Trebuchet MS', Verdana, Arial,
                                           sans-serif;
                                         font-size: 18px;
-                                        line-height: 18px;
                                         font-weight: 700;
                                         text-decoration: none;
-                                        padding: 15px 55px;
                                         color: #ffffff;
                                         display: block;
-                                        border-radius: 10px;
                                       "
                                     >
                                       SHOP NOW
@@ -1192,7 +1263,10 @@
         </tr>
         <!-- Divider -->
         <tr>
-          <td style="padding: 10px 20px; background-color: #ffffff">
+          <td
+            class="divider-bg"
+            style="padding: 10px 20px; background-color: #ffffff"
+          >
             <table
               role="presentation"
               border="0"
@@ -1202,6 +1276,7 @@
             >
               <tr>
                 <td
+                  class="divider-line"
                   height="1"
                   style="
                     font-size: 1px;
@@ -1217,7 +1292,11 @@
         </tr>
         <!-- Adopt a kitten section -->
         <tr>
-          <td align="center" style="padding: 20px 0; background-color: #ffffff">
+          <td
+            class="kitten-bg"
+            align="center"
+            style="padding: 20px 0; background-color: #ffffff"
+          >
             <table
               role="presentation"
               border="0"
@@ -1275,7 +1354,7 @@
                   >
                     <tr>
                       <td
-                        class="kitten-paragraph"
+                        class="kitten-text"
                         style="text-align: center; padding: 20px 20px 30px"
                       >
                         <table
@@ -1288,6 +1367,7 @@
                           <tr>
                             <td style="padding-bottom: 20px">
                               <p
+                                class="kitten-paragraph"
                                 style="
                                   font-size: 18px;
                                   line-height: 32px;
@@ -1318,9 +1398,10 @@
                             <td
                               class="button-td"
                               style="
-                                border-radius: 10px;
-                                background: #f5945c;
                                 text-align: center;
+                                border-radius: 5px;
+                                background: #f5945c;
+                                padding: 10px 55px;
                               "
                             >
                               <!--[if mso]>
@@ -1331,9 +1412,9 @@
                                   style="
                                     height: 50px;
                                     v-text-anchor: middle;
-                                    width: 200px;
+                                    width: 170px;
                                   "
-                                  arcsize="16%"
+                                  arcsize="10%"
                                   strokecolor="#F5945C"
                                   fillcolor="#F5945C"
                                 >
@@ -1360,17 +1441,14 @@
                                 class="button-a"
                                 style="
                                   background: #f5945c;
-                                  border: 1px solid #f5945c;
+                                  border-radius: 5px;
                                   font-family: 'Nunito', Calibri, 'Trebuchet MS',
                                     Verdana, Arial, sans-serif;
                                   font-size: 18px;
-                                  line-height: 18px;
                                   font-weight: 700;
                                   text-decoration: none;
-                                  padding: 15px 55px;
                                   color: #ffffff;
                                   display: block;
-                                  border-radius: 10px;
                                 "
                               >
                                 VIEW KITTENS
@@ -1555,9 +1633,10 @@
                                   <td
                                     class="button-td"
                                     style="
-                                      border-radius: 10px;
-                                      background: #f5945c;
                                       text-align: center;
+                                      border-radius: 5px;
+                                      padding: 10px 55px;
+                                      background: #f5945c;
                                     "
                                   >
                                     <!--[if mso]>
@@ -1568,9 +1647,9 @@
                                         style="
                                           height: 50px;
                                           v-text-anchor: middle;
-                                          width: 200px;
+                                          width: 170px;
                                         "
-                                        arcsize="16%"
+                                        arcsize="10%"
                                         strokecolor="#F5945C"
                                         fillcolor="#F5945C"
                                       >
@@ -1597,18 +1676,15 @@
                                       class="button-a"
                                       style="
                                         background: #f5945c;
-                                        border: 1px solid #f5945c;
+                                        border-radius: 5px;
                                         font-family: 'Nunito', Calibri,
                                           'Trebuchet MS', Verdana, Arial,
                                           sans-serif;
                                         font-size: 18px;
-                                        line-height: 18px;
                                         font-weight: 700;
                                         text-decoration: none;
-                                        padding: 15px 55px;
                                         color: #ffffff;
                                         display: block;
-                                        border-radius: 10px;
                                       "
                                     >
                                       READ MORE
@@ -1738,9 +1814,10 @@
                                   <td
                                     class="button-td"
                                     style="
-                                      border-radius: 10px;
-                                      background: #f5945c;
                                       text-align: center;
+                                      border-radius: 5px;
+                                      padding: 10px 55px;
+                                      background: #f5945c;
                                     "
                                   >
                                     <!--[if mso]>
@@ -1751,9 +1828,9 @@
                                         style="
                                           height: 50px;
                                           v-text-anchor: middle;
-                                          width: 200px;
+                                          width: 170px;
                                         "
-                                        arcsize="16%"
+                                        arcsize="10%"
                                         strokecolor="#F5945C"
                                         fillcolor="#F5945C"
                                       >
@@ -1780,18 +1857,15 @@
                                       class="button-a"
                                       style="
                                         background: #f5945c;
-                                        border: 1px solid #f5945c;
+                                        border-radius: 5px;
                                         font-family: 'Nunito', Calibri,
                                           'Trebuchet MS', Verdana, Arial,
                                           sans-serif;
                                         font-size: 18px;
-                                        line-height: 18px;
                                         font-weight: 700;
                                         text-decoration: none;
-                                        padding: 15px 55px;
                                         color: #ffffff;
                                         display: block;
-                                        border-radius: 10px;
                                       "
                                     >
                                       READ MORE
@@ -1814,7 +1888,10 @@
 
         <!-- Divider -->
         <tr>
-          <td style="padding: 10px 20px; background-color: #ffffff">
+          <td
+            class="divider-bg"
+            style="padding: 10px 20px; background-color: #ffffff"
+          >
             <table
               role="presentation"
               border="0"
@@ -1824,6 +1901,7 @@
             >
               <tr>
                 <td
+                  class="divider-line"
                   height="1"
                   style="
                     font-size: 1px;
@@ -1861,11 +1939,13 @@
             >
               <!-- Logo -->
               <tr>
-                <td style="padding: 0px 0; text-align: center">
+                <td
+                  align="center"
+                  style="text-align: center; padding-bottom: 10px"
+                >
                   <img
                     src="https://knoxwong.com/wp-content/uploads/2025/10/PetShop_Logo.png"
                     width="200"
-                    height="50"
                     alt="PetShop footer logo"
                     border="0"
                     style="
@@ -1876,6 +1956,8 @@
                       font-size: 15px;
                       line-height: 15px;
                       color: #555555;
+                      display: block;
+                      margin: 0 auto;
                     "
                   />
                 </td>
@@ -1883,8 +1965,17 @@
               <!-- Copyright -->
               <tr>
                 <td style="padding: 5px 0">
-                  <p style="color: #000000; text-align: center">
-                    @ All Rights Reserved
+                  <p
+                    class="footer-text"
+                    style="
+                      color: #000000;
+                      text-align: center;
+                      font-family: 'Nunito', Calibri, 'Trebuchet MS', Verdana,
+                        Arial, sans-serif;
+                      margin: 0;
+                    "
+                  >
+                    &copy; All Rights Reserved
                   </p>
                 </td>
               </tr>
@@ -1951,8 +2042,16 @@
               </tr>
               <!-- Address -->
               <tr>
-                <td align="center" style="padding: 5px 0">
-                  <p style="color: #000000; text-align: center">
+                <td align="center" style="padding: 5px 0; color: #000000">
+                  <p
+                    class="footer-text"
+                    style="
+                      color: #000000;
+                      text-align: center;
+                      font-family: 'Nunito', Calibri, 'Trebuchet MS', Verdana,
+                        Arial, sans-serif;
+                    "
+                  >
                     Pet Shop, 7-11 Commercial Ct, Belfast Bt1 2NB
                   </p>
                 </td>
@@ -1970,17 +2069,35 @@
                     <tr>
                       <td
                         align="center"
-                        style="text-align: center; padding: 10px 0"
+                        style="
+                          text-align: center;
+                          padding: 10px 0;
+                          color: #000000;
+                        "
                       >
                         <a
+                          class="footer-text"
                           href="#"
-                          style="color: #888888; text-decoration: underline"
+                          style="
+                            color: #000000;
+                            text-decoration: underline;
+                            font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                              Verdana, Arial, sans-serif;
+                          "
                           >Unsubscribe</a
                         >
-                        <span style="color: #888888">&nbsp;|&nbsp;</span>
+                        <span class="footer-text" style="color: #000000"
+                          >&nbsp;|&nbsp;</span
+                        >
                         <a
+                          class="footer-text"
                           href="#"
-                          style="color: #888888; text-decoration: underline"
+                          style="
+                            color: #000000;
+                            text-decoration: underline;
+                            font-family: 'Nunito', Calibri, 'Trebuchet MS',
+                              Verdana, Arial, sans-serif;
+                          "
                           >View in Browser</a
                         >
                       </td>
